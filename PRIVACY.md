@@ -89,4 +89,4 @@ We do not knowingly collect data from children.
 Material changes to this policy will be reflected here with an updated date.
 
 ## Contact
-Questions: open an issue at https://github.com/hemnaath/ai-jobby/issues
+Questions: open an issue at https://github.com/hemnaath04/rolereveal/issues

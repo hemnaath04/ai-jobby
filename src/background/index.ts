@@ -148,14 +148,14 @@ chrome.runtime.onMessage.addListener((msg: Message, _sender, sendResponse) => {
 // where auto-detection fails.
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
-    id: 'ai-jobby-eval-selection',
+    id: 'rolereveal-eval-selection',
     title: 'RoleReveal: evaluate selected text as JD',
     contexts: ['selection'],
   });
 });
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-  if (info.menuItemId === 'ai-jobby-eval-selection' && tab?.id && info.selectionText) {
+  if (info.menuItemId === 'rolereveal-eval-selection' && tab?.id && info.selectionText) {
     chrome.tabs.sendMessage(tab.id, {
       type: 'EVAL_SELECTION',
       text: info.selectionText,

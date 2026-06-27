@@ -174,7 +174,7 @@ export function Options() {
         configured AI backend to generate the score. Resumes and settings are stored
         locally on your device.{' '}
         <a
-          href="https://github.com/hemnaath/ai-jobby/blob/main/PRIVACY.md"
+          href="https://github.com/hemnaath04/rolereveal/blob/main/PRIVACY.md"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -43,7 +43,7 @@ viewing — no scraping, no automation, no bulk crawling.
 Keywords (woven in naturally): resume match score, job fit, ATS resume checker,
 resume scanner, job match, skill gap, application tracker, LinkedIn, Indeed.
 
-Open source: https://github.com/hemnaath/ai-jobby
+Open source: https://github.com/hemnaath04/rolereveal
 
 ## Single purpose (required field)
 Score the job posting the user is viewing against their resume and show the match
@@ -75,7 +75,7 @@ backend API for scoring but does not download or execute remote code.
 - Location, health, financial, personal communications: No.
 - Is data sold to third parties? No.
 - Is data used for purposes unrelated to the core feature? No.
-- Privacy policy URL: https://github.com/hemnaath/ai-jobby/blob/main/PRIVACY.md
+- Privacy policy URL: https://github.com/hemnaath04/rolereveal/blob/main/PRIVACY.md
 
 ## Assets needed (you provide / generate)
 - Store icon 128×128 — use icons/icon128.png ✓

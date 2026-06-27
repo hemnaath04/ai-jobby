@@ -1,72 +1,69 @@
+<div align="center">
+
+<img src="icons/icon128.png" width="84" alt="RoleReveal logo" />
+
 # RoleReveal
 
-A Chrome / Edge (Manifest V3) extension that scores how well **your** resume
-matches the job posting you're viewing — an **Apply / Maybe / Skip** verdict, a
-one-line summary, and (on expand) required vs. nice-to-have qualifications and
-your matching / missing skills — injected **inline on the page**, on virtually
-any job site.
+### See how well your résumé actually fits a job — right on the posting.
 
-> Open source. Not affiliated with or endorsed by LinkedIn, Indeed, Greenhouse,
-> Lever, Workday, or any job board. It only reads the posting you're actively
-> viewing — it does not crawl, scrape in bulk, or automate any site.
+<!-- 👉 Replace the link below with your Chrome Web Store URL once the extension is approved -->
+[**➡️ Add to Chrome**](REPLACE_WITH_CHROME_WEB_STORE_LINK) · [Privacy Policy](./PRIVACY.md) · [Backend](https://github.com/hemnaath04/rolereveal-backend)
 
----
+_Chrome Web Store link coming soon — it's in review._
 
-## Features
+![MIT License](https://img.shields.io/badge/license-MIT-blue) ![Manifest V3](https://img.shields.io/badge/Chrome-MV3-brightgreen)
 
-- **Inline match panel** on the job posting: score (0–100), Apply/Maybe/Skip
-  verdict, a ≤20-word summary, and a **Show match details** toggle for required /
-  nice-to-have qualifications and matching / missing skills.
-- **Deterministic signals** pulled from the description with no LLM: sponsorship /
-  citizenship wording, work mode, and salary.
-- **Works everywhere**: dedicated adapters for LinkedIn and NUworks/Symplicity,
-  plus a universal adapter (schema.org `JobPosting` + heading/heuristic detection)
-  for Greenhouse, Lever, company career pages, and beyond. It only activates when
-  a real posting is detected.
-- **Multiple resumes** managed in Options (PDF upload parsed client-side, paste,
-  or JSON import); the best-scoring one is picked automatically.
-- **Application tracker** — "Mark applied" logs company, title, URL, score, date.
-- **Your choice of backend**: a built-in proxy (zero setup) **or** your own
-  provider + API key (Anthropic, OpenAI, or any OpenAI-compatible endpoint).
+</div>
 
 ---
+
+## What is this?
+
+Job hunting is a guessing game. You read a posting, wonder *"am I even a fit for this?"*, and either spend an hour tailoring your résumé or apply blindly and hope. RoleReveal takes the guesswork out: open any job posting and it instantly shows, **right on the page**, how well your résumé matches — a score out of 100, an **Apply / Maybe / Skip** call, and the exact skills you're missing.
+
+Think of it as a second pair of eyes that reads the job description, compares it to your résumé, and tells you the truth in a couple of seconds — so you spend your energy on the roles you can actually win.
+
+## What it does
+
+- **A match score on every posting.** A 0–100 score and an Apply / Maybe / Skip verdict appear inline as you browse.
+- **A one-line "why."** A short, honest summary of the verdict — no fluff.
+- **The details when you want them.** Click *Show match details* for required vs. nice-to-have qualifications, the skills you match, and the skills (and ATS keywords) you're missing.
+- **Quick signals.** Sponsorship/citizenship wording, work mode, and salary, pulled straight from the description.
+- **Works almost everywhere.** LinkedIn, Indeed, Glassdoor, Greenhouse, Lever, Workday, your university job board (NUworks/Symplicity), and most company career pages.
+- **Multiple résumés.** Add a few; it automatically scores against your best-matching one.
+- **A built-in tracker.** Mark jobs as applied and keep a simple list.
 
 ## How it works
 
-| Part | Responsibility |
-|------|----------------|
-| **Content script** (`src/content/`) | Per-site adapters detect the posting and inject a Shadow-DOM panel; idempotent + SPA-aware. |
-| **Background worker** (`src/background/`) | The only place that makes the LLM call. Builds the prompt, caches results per job description. |
-| **Backend proxy** (separate repo) | Holds the real LLM key server-side and enforces per-user rate limits, so the published extension ships **no key**. |
+1. Add your résumé once (PDF, paste, or JSON) in the options page.
+2. Open any job posting.
+3. RoleReveal detects it, reads the description, and shows the match panel — no button-mashing.
 
-By default the extension sends the **job description** and your **selected
-resume** to the RoleReveal backend, which forwards them to an LLM to compute the
-score. You can switch to your **own provider + key** in Options, in which case
-requests go directly to the provider you choose. See **[Privacy](./PRIVACY.md)**.
+Under the hood it uses an AI model to do the comparison. You can use the **built-in backend** (nothing to set up) or plug in **your own provider and API key** (Anthropic, OpenAI, Gemini, or any OpenAI-compatible endpoint) in Options.
 
----
+## Your privacy comes first
 
-## Build & load unpacked
+This was built to be respectful of your data:
+
+- **Personal details are masked before anything is sent.** Your name, email, phone, and links are stripped out, and résumé labels are replaced with generic ones — so your identity isn't shared with the AI. (You can toggle this in Options.)
+- **Your résumés never leave your device in full** — they live in your browser's local storage. Only the masked text needed for scoring is sent.
+- **It's passive.** RoleReveal only *reads* the posting you're already looking at. It never clicks, auto-applies, navigates, or sends requests to the job site — so it won't put your accounts at risk.
+- **No tracking, no ads, no selling data.**
+
+Full details: [Privacy Policy](./PRIVACY.md).
+
+## Install from source (developers)
 
 ```bash
 npm install
-npm run build            # outputs to dist/
+npm run build      # builds to dist/
 ```
-Then in Chrome/Edge → `chrome://extensions` → enable **Developer mode** →
-**Load unpacked** → select **`dist/`**.
+Then in Chrome/Edge → `chrome://extensions` → turn on **Developer mode** → **Load unpacked** → pick the **`dist/`** folder.
 
----
+## A quick disclaimer
 
-## Privacy & disclaimer
-
-- Resumes, settings, and the tracker are stored in `chrome.storage.local` on your
-  device. Scoring sends the job description + resume to the configured backend/LLM
-  (see [PRIVACY.md](./PRIVACY.md)). Use your own key to keep it provider-direct.
-- Provided **as-is, without warranty**. AI scores are guidance, not a hiring
-  decision — verify before relying on them.
-- All trademarks (LinkedIn, Indeed, etc.) belong to their owners; this project is
-  independent and unaffiliated.
+RoleReveal gives you **AI-generated estimates** to help you decide where to spend your time. Scores, verdicts, and any sponsorship/eligibility hints are **informational only — not legal, immigration, or career advice**. Always confirm details with the employer. RoleReveal is an independent project and is **not affiliated with or endorsed by** LinkedIn, Indeed, or any job board; all trademarks belong to their owners.
 
 ## License
 
-MIT — see [LICENSE](./LICENSE).
+[MIT](./LICENSE) © Hemnaath Balasubramani
