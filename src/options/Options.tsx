@@ -153,6 +153,15 @@ export function Options() {
             Auto-run on page load (otherwise click Evaluate)
           </label>
         </label>
+        <label className="field" style={{ display: 'flex', alignItems: 'flex-end' }}>
+          <label className="toggle">
+            <input
+              type="checkbox" checked={settings.redactPii !== false}
+              onChange={(e) => patchSettings({ redactPii: e.target.checked })}
+            />
+            Mask personal info (name, email, phone, links) before sending
+          </label>
+        </label>
       </div>
 
       <p className="muted small space">

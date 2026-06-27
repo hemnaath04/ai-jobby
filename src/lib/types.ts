@@ -31,6 +31,8 @@ export interface Settings {
   thresholds: { apply: number; maybe: number };
   /** Auto-run evaluation on page load vs. wait for a manual click. */
   autoRun: boolean;
+  /** Mask personal info (name, email, phone, links) before sending to the LLM. */
+  redactPii: boolean;
   /** Preferred resume id; used as a tie-break / default ordering hint. */
   defaultResumeId: string | null;
   /** Remembered overlay position + collapsed state. */
@@ -46,6 +48,7 @@ export const DEFAULT_SETTINGS: Settings = {
   customBaseUrl: DEFAULT_BACKEND.customBaseUrl,
   thresholds: { apply: 75, maybe: 55 },
   autoRun: true,
+  redactPii: true,
   defaultResumeId: null,
   overlay: { x: -1, y: -1, collapsed: false },
 };

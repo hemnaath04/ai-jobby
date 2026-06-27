@@ -1,5 +1,6 @@
 import type { JobSiteAdapter } from './types';
 import type { JobSummary } from '../../lib/types';
+import { revealApply } from './reveal';
 
 const clean = (s: string | null | undefined): string =>
   (s || '').replace(/\s+/g, ' ').trim();
@@ -183,6 +184,7 @@ export const linkedInAdapter: JobSiteAdapter = {
       }
       return null;
     };
-    (byText(/^apply\b/) || byText(/quick apply/))?.click();
+    // Passive: reveal LinkedIn's own Apply button; the user clicks it.
+    revealApply(byText(/^apply\b/) || byText(/quick apply/));
   },
 };

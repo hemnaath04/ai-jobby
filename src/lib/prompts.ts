@@ -27,10 +27,12 @@ const MAX_RESUME_CHARS = 6000;
 
 export function buildEvalUserPrompt(jdText: string, resumes: Resume[]): string {
   const jd = jdText.trim().slice(0, MAX_JD_CHARS);
+  // Use generic labels ("Resume 1") so a label containing the candidate's name
+  // never reaches the LLM. The caller maps these back to real labels locally.
   const resumeBlocks = resumes
     .map(
       (r, i) =>
-        `--- RESUME ${i + 1} (label: "${r.label}") ---\n${r.text
+        `--- RESUME ${i + 1} (label: "Resume ${i + 1}") ---\n${r.text
           .trim()
           .slice(0, MAX_RESUME_CHARS)}`,
     )

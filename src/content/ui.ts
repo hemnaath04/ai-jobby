@@ -212,7 +212,7 @@ export function renderDetailsResult(
 
       <div class="actions">
         <button class="btn" id="aj-toggle">${expanded ? 'Hide match details' : 'Show match details'}</button>
-        <button class="btn primary" id="aj-apply">Quick Apply</button>
+        <button class="btn primary" id="aj-apply">Apply on site →</button>
         <button class="btn" id="aj-track">Mark applied</button>
       </div>
 

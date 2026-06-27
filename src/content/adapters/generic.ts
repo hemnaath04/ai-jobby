@@ -1,4 +1,5 @@
 import type { JobSiteAdapter } from './types';
+import { revealApply } from './reveal';
 import {
   extractJob,
   getJdAnchor,
@@ -68,7 +69,7 @@ export const genericAdapter: JobSiteAdapter = {
     for (const b of Array.from(document.querySelectorAll<HTMLElement>('a, button'))) {
       const t = (b.textContent || '').trim().toLowerCase();
       if (/^apply\b/.test(t) && !t.includes('filter')) {
-        b.click();
+        revealApply(b); // passive: reveal, don't click
         return;
       }
     }

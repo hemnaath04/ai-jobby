@@ -3,6 +3,7 @@
 // network calls. Content script / popup talk to it via chrome.runtime messages.
 // ---------------------------------------------------------------------------
 import { chatComplete, extractJson } from '../lib/llm';
+import { redactResume } from '../lib/redact';
 import {
   buildEvalUserPrompt,
   EVAL_SYSTEM_PROMPT,
@@ -57,10 +58,17 @@ async function handleEvaluate(
     if (cached) return { ok: true, result: cached.result, cached: true };
   }
 
+  // Mask personal data before it leaves the device (default on). The full
+  // resume stays in local storage; only the redacted copy is sent.
+  const sendResumes =
+    settings.redactPii === false
+      ? resumes
+      : resumes.map((r) => ({ ...r, text: redactResume(r.text) }));
+
   try {
     const raw = await chatComplete(settings, {
       system: EVAL_SYSTEM_PROMPT,
-      user: buildEvalUserPrompt(msg.job.jdText, resumes),
+      user: buildEvalUserPrompt(msg.job.jdText, sendResumes),
       temperature: 0.2,
       maxTokens: 900,
       jsonMode: true,
@@ -68,6 +76,14 @@ async function handleEvaluate(
     });
     const parsed = extractJson<any>(raw);
     const result = normalizeResult(parsed, settings);
+    // Map the LLM's generic "Resume N" labels back to the user's real labels.
+    const realLabel = (lbl: string): string => {
+      const m = lbl.match(/Resume\s+(\d+)/i);
+      const idx = m ? Number(m[1]) - 1 : -1;
+      return resumes[idx]?.label ?? lbl;
+    };
+    result.perResume = result.perResume.map((pr) => ({ ...pr, label: realLabel(pr.label) }));
+    result.bestResume = realLabel(result.bestResume);
     await writeCache({ hash: key, result, createdAt: Date.now() });
     return { ok: true, result, cached: false };
   } catch (e: any) {

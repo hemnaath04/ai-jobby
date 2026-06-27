@@ -1,4 +1,5 @@
 import type { JobSiteAdapter } from './types';
+import { revealApply } from './reveal';
 
 const clean = (s: string | null | undefined): string =>
   (s || '').replace(/\s+/g, ' ').trim();
@@ -105,7 +106,7 @@ export const symplicityAdapter: JobSiteAdapter = {
   clickApply() {
     for (const b of Array.from(document.querySelectorAll<HTMLElement>('button, a'))) {
       if (clean(b.textContent).toLowerCase() === 'apply') {
-        b.click();
+        revealApply(b); // passive: reveal, don't click
         return;
       }
     }

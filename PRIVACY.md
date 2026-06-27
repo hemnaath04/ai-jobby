@@ -23,6 +23,11 @@ from the page and your **selected resume text** to the AI Jobby backend
 (LLM) to compute the match score and analysis. The result is returned to the
 extension and displayed.
 
+- **Personal info is masked first (on by default).** Before the resume leaves
+  your device, AI Jobby redacts your name, email, phone number, and links, and
+  replaces resume labels with generic ones ("Resume 1") — so your contact details
+  and name are **not** sent to the backend or the LLM. Skills and experience are
+  kept so scoring still works. You can toggle this in Options.
 - This data is sent **only** to generate a score, when a job posting is detected
   or you trigger a scoring action.
 - The AI Jobby backend does **not** persistently store your resume or job
@@ -38,6 +43,15 @@ extension and displayed.
 - No tracking across sites; the extension only reads the content of a page when
   it detects a job posting on it.
 - No keystroke logging, no form data beyond the resume you explicitly add.
+- No scraping of profiles, connections, recruiters, or contact lists — only the
+  job description, title, and company are read.
+
+## Passive by design
+AI Jobby only **reads** the job posting you are actively viewing. It does **not**
+click, submit, auto-apply, navigate, automate, or send any network request to the
+job site itself. The only outbound request is the scoring call to the backend /
+LLM provider described above. This is deliberate — it keeps the extension clear of
+job-site automation rules and keeps your account safe.
 
 ## Permissions
 - **storage** — save your resumes, settings, and tracker on your device.
