@@ -27,7 +27,7 @@ export default defineManifest({
   description: pkg.description,
   // Storage for resumes/settings/tracker; scripting/activeTab for manual runs
   // from the popup; tabs to read the active tab URL/title.
-  permissions: ['storage', 'activeTab', 'scripting', 'tabs', 'contextMenus'],
+  permissions: ['storage', 'activeTab', 'contextMenus'],
   host_permissions: ['<all_urls>'],
   action: {
     default_popup: 'src/popup/index.html',
