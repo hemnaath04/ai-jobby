@@ -4,26 +4,44 @@
 RoleReveal — AI Job Fit & Resume Match Score
 
 ## Short description (≤132 chars)
-Instantly score any job posting against your resume — match %, Apply/Maybe/Skip verdict, and the skills you're missing.
+Resume match score for any job — see how well you fit a posting, with an Apply/Maybe/Skip verdict and the skills you're missing.
 
 ## Category
 Productivity
 
 ## Detailed description
-RoleReveal reads the job posting you're viewing and scores how well it matches your
-resume — right inside the page, as you browse.
+> The first ~150 words are the most important for Chrome Web Store search ranking
+> — keywords are front-loaded here, naturally (no stuffing).
 
-• Live match score + Apply / Maybe / Skip verdict on every posting
-• One-line summary of why, with required vs. nice-to-have qualifications
-• Matching skills and the skills you're missing
-• Sponsorship / work-mode / salary signals pulled from the description
-• Works on LinkedIn, your school job board (NUworks/Symplicity), Greenhouse,
-  Lever, and virtually any career site or job board
-• Application tracker built in
+RoleReveal is an AI resume match score and job-fit checker that works right on the
+job posting you're viewing. Open any job on LinkedIn, Indeed, Glassdoor,
+Greenhouse, Lever, Workday, or any company careers page, and instantly see how
+well your resume matches the role — a 0–100 match score, an Apply / Maybe / Skip
+verdict, and the required skills, qualifications, and ATS keywords you're missing
+— inline, as you browse.
 
-How it works: add your resume once. Open any job posting and RoleReveal shows a
-match panel inline. Use the built-in backend (no setup) or bring your own LLM
-provider/API key in Options.
+Stop guessing whether you're a fit. RoleReveal compares your resume against each
+job description and shows where you're strong and what to add before you apply.
+
+Features
+• Live resume match score (0–100) + Apply / Maybe / Skip verdict on every posting
+• Required vs. nice-to-have qualifications, matching skills, and missing skills / ATS keywords
+• Sponsorship, work-mode, and salary signals pulled from the job description
+• Works on LinkedIn, Indeed, Glassdoor, Greenhouse, Lever, Workday,
+  NUworks/Symplicity, and virtually any job board or careers page
+• Multiple resumes — it automatically picks your best-matching one
+• Built-in application tracker
+
+How it works: add your resume once, then open any job posting — RoleReveal shows a
+match panel inline. Use the built-in AI (no setup) or bring your own provider/API
+key in Options.
+
+Private & safe: your personal info (name, email, phone) is masked before scoring,
+resumes stay in local storage, and RoleReveal only reads the posting you're
+viewing — no scraping, no automation, no bulk crawling.
+
+Keywords (woven in naturally): resume match score, job fit, ATS resume checker,
+resume scanner, job match, skill gap, application tracker, LinkedIn, Indeed.
 
 Open source: https://github.com/hemnaath/ai-jobby
 
