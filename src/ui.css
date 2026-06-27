@@ -26,8 +26,7 @@ h1, h2, h3 { margin: 0; }
 .popup { width: 380px; max-height: 580px; overflow-y: auto; }
 
 .brand { display: flex; align-items: center; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); z-index: 2; }
-.brand .logo { width: 14px; height: 14px; border-radius: 4px; display: inline-block;
-  background: linear-gradient(135deg, #CCFF00, #FFFF00); box-shadow: 0 0 8px rgba(204,255,0,.5); }
+.brand .logo { width: 22px; height: 22px; border-radius: 6px; display: inline-block; }
 .brand h1 { font-size: 15px; font-weight: 700; }
 .brand .spacer { flex: 1; }
 

@@ -3,6 +3,9 @@ import type { DeterministicSignals } from './deterministic';
 
 export const ROOT_ATTR = 'data-job-extension-root';
 
+// Extension logo, loadable inside the injected panel (icons/* is web-accessible).
+const LOGO_URL = chrome.runtime.getURL('icons/icon48.png');
+
 export function scoreColor(score: number): string {
   if (score >= 70) return '#16a34a';
   if (score >= 45) return '#d97706';
@@ -25,8 +28,7 @@ const BASE_CSS = `
     background:linear-gradient(180deg,#CCFF00,#DFFF00,#FFFF00); }
   .brand { display:flex; align-items:center; gap:6px; font-size:11px; font-weight:800;
     letter-spacing:.09em; text-transform:uppercase; color:#CCFF00; margin-bottom:8px; }
-  .mk { width:9px; height:9px; border-radius:3px; display:inline-block;
-    background:linear-gradient(135deg,#CCFF00,#FFFF00); box-shadow:0 0 8px rgba(204,255,0,.6); }
+  .mk { width:16px; height:16px; border-radius:4px; display:inline-block; vertical-align:middle; }
   .muted { color:#9aa0a6; }
   .row { display:flex; align-items:center; gap:8px; }
   .chip { display:inline-flex; align-items:center; gap:4px; font-size:11px; font-weight:600;
@@ -101,7 +103,7 @@ export function renderCardPanel(
 
   app.innerHTML = `
     <div class="aj">
-      <span class="mk"></span>
+      <img class="mk" src="${LOGO_URL}" alt="">
       <span class="est" style="color:${scoreColor(est)}" title="Quick estimate — open the job for the full AI score">~${est}% est.</span>
       <span class="chips">${chips.join('')}</span>
     </div>`;
@@ -111,7 +113,7 @@ export function renderCardPanel(
 export function renderDetailsSkeleton(app: HTMLElement, summary: JobSummary | null): void {
   app.innerHTML = `
     <div class="aj">
-      <div class="brand"><span class="mk"></span> AI Jobby · Match</div>
+      <div class="brand"><img class="mk" src="${LOGO_URL}" alt=""> AI Jobby · Match</div>
       <div class="head">
         <div class="badge skel" style="background:#26262b"></div>
         <div style="flex:1">
@@ -187,7 +189,7 @@ export function renderDetailsResult(
 
   app.innerHTML = `
     <div class="aj">
-      <div class="brand"><span class="mk"></span> AI Jobby · Match</div>
+      <div class="brand"><img class="mk" src="${LOGO_URL}" alt=""> AI Jobby · Match</div>
       <div class="head">
         <div class="badge" style="background:${color}">${result.overallScore}</div>
         <div style="flex:1">

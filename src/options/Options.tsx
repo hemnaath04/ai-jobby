@@ -38,7 +38,10 @@ export function Options() {
 
   return (
     <div className="options">
-      <h1 style={{ fontSize: 22, marginBottom: 4 }}>AI Jobby</h1>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 4 }}>
+        <img src={chrome.runtime.getURL('icons/icon128.png')} width={30} height={30} style={{ borderRadius: 8 }} alt="" />
+        <h1 style={{ fontSize: 22, margin: 0 }}>AI Jobby</h1>
+      </div>
       <p className="muted small" style={{ marginTop: 0 }}>
         Score any job posting against your resumes, get an Apply/Maybe/Skip verdict, tailor a resume, and track applications — all local.
       </p>

@@ -47,8 +47,8 @@ export default defineManifest({
   ],
   web_accessible_resources: [
     {
-      // pdf.js worker chunk + any assets the content script lazy-loads.
-      resources: ['assets/*', '*.js', '*.css'],
+      // pdf.js worker chunk, lazy-loaded assets, and the logo used in the panel.
+      resources: ['assets/*', '*.js', '*.css', 'icons/*'],
       matches: JOB_SITE_MATCHES,
     },
   ],
