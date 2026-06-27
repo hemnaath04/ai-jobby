@@ -22,5 +22,6 @@ export const DEFAULT_BACKEND: {
   // Leave '' unless you set APP_TOKEN on the proxy; then put that token here
   // (it's public + revocable — NOT a provider key).
   apiKey: '',
-  model: 'gemini-3.5-flash',
+  // 'auto' — model routing is handled by the Manifest gateway behind the proxy.
+  model: 'auto',
 };
