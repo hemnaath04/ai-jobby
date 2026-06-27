@@ -182,8 +182,9 @@ export function renderDetailsResult(
           ? `<div class="chips">${result.missingSkills.map((s) => `<span class="chip">${esc(s)}</span>`).join('')}</div>`
           : '',
       )}
-      <div class="muted" style="font-size:10px;margin-top:8px">
-        H-1B / E-Verify / PERM / alumni data needs a company dataset (not connected).
+      <div class="muted" style="font-size:10px;margin-top:8px;line-height:1.4">
+        AI estimate — informational only, not legal, immigration, or career advice.
+        Verify eligibility and details with the employer.
       </div>`
     : '';
 

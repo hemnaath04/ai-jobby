@@ -65,5 +65,28 @@ job-site automation rules and keeps your account safe.
 Removing the extension deletes all locally stored data. You can also clear
 resumes, settings, and tracker entries from the Options page at any time.
 
+## Not professional advice
+AI Jobby produces automated estimates to help you triage postings. Scores,
+verdicts, and any sponsorship / work-authorization / eligibility signals are
+**informational only** and may be wrong. They are **not** legal, immigration,
+financial, or career advice. Always verify details directly with the employer.
+
+## International data transfer
+The backend and LLM providers may process requests on servers located in the
+United States or other countries. By using the default backend you consent to
+this transfer. To avoid it, configure your own provider/key in Options.
+
+## Children
+AI Jobby is intended for job seekers and is not directed to children under 16.
+We do not knowingly collect data from children.
+
+## Your choices
+- Toggle PII masking in Options (on by default).
+- Use your own provider + API key to bypass the AI Jobby backend entirely.
+- Clear resumes/settings/tracker from Options, or uninstall to delete all local data.
+
+## Changes
+Material changes to this policy will be reflected here with an updated date.
+
 ## Contact
 Questions: open an issue at https://github.com/hemnaath/ai-jobby/issues

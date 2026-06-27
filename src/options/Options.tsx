@@ -168,6 +168,20 @@ export function Options() {
         Tip: with the Custom provider you can route through your own gateway or a local
         Ollama model (set base URL to <code>http://localhost:11434/v1</code>) so evaluations cost nothing.
       </p>
+
+      <p className="muted small">
+        Privacy: scoring sends your (masked) resume and the job description to the
+        configured AI backend to generate the score. Resumes and settings are stored
+        locally on your device.{' '}
+        <a
+          href="https://github.com/hemnaath/ai-jobby/blob/main/PRIVACY.md"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Privacy Policy
+        </a>
+        . AI results are informational only — not legal, immigration, or career advice.
+      </p>
     </div>
   );
 }
