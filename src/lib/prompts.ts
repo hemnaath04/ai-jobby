@@ -21,7 +21,7 @@ export const EVAL_JSON_SCHEMA = `{
 }`;
 
 // Bound the prompt so a long JD or several long resumes don't blow up latency
-// and cost. Matches JobMatchAI's ~8k JD cap; resumes are capped per-block.
+// and cost: the JD is capped (~8k chars) and each resume is capped per-block.
 const MAX_JD_CHARS = 8000;
 const MAX_RESUME_CHARS = 6000;
 
