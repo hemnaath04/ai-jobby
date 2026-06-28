@@ -1,0 +1,26 @@
+{
+  "name": "Test Candidate",
+  "targetRole": "Junior Software Engineer",
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Python",
+    "SQL",
+    "Git"
+  ],
+  "experience": [
+    {
+      "company": "Example Labs",
+      "role": "Software Engineering Intern",
+      "description": "Built fictional internal React and Node.js tools."
+    },
+    {
+      "company": "Demo Systems",
+      "role": "Technology Intern",
+      "description": "Worked on fictional testing and automation projects."
+    }
+  ],
+  "education": "Fictional university computer-science student"
+}

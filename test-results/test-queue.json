@@ -1,0 +1,1518 @@
+{
+  "totalPatterns": 252,
+  "buckets": 11,
+  "queue": [
+    {
+      "siteId": "linkedin-com",
+      "pattern": "*://*.linkedin.com/jobs/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-com",
+      "pattern": "*://*.indeed.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-ca",
+      "pattern": "*://*.indeed.ca/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-co-uk",
+      "pattern": "*://*.indeed.co.uk/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-com-au",
+      "pattern": "*://*.indeed.com.au/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-co-in",
+      "pattern": "*://*.indeed.co.in/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-de",
+      "pattern": "*://*.indeed.de/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-fr",
+      "pattern": "*://*.indeed.fr/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-es",
+      "pattern": "*://*.indeed.es/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-it",
+      "pattern": "*://*.indeed.it/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-nl",
+      "pattern": "*://*.indeed.nl/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-ie",
+      "pattern": "*://*.indeed.ie/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-ch",
+      "pattern": "*://*.indeed.ch/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-co-jp",
+      "pattern": "*://*.indeed.co.jp/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-sg",
+      "pattern": "*://*.indeed.sg/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-ae",
+      "pattern": "*://*.indeed.ae/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-co-za",
+      "pattern": "*://*.indeed.co.za/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-com-br",
+      "pattern": "*://*.indeed.com.br/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "indeed-com-mx",
+      "pattern": "*://*.indeed.com.mx/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "glassdoor-com",
+      "pattern": "*://*.glassdoor.com/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "glassdoor-ca",
+      "pattern": "*://*.glassdoor.ca/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "glassdoor-co-uk",
+      "pattern": "*://*.glassdoor.co.uk/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "glassdoor-com-au",
+      "pattern": "*://*.glassdoor.com.au/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "glassdoor-co-in",
+      "pattern": "*://*.glassdoor.co.in/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "glassdoor-de",
+      "pattern": "*://*.glassdoor.de/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "glassdoor-fr",
+      "pattern": "*://*.glassdoor.fr/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "ziprecruiter-com",
+      "pattern": "*://*.ziprecruiter.com/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "monster-com",
+      "pattern": "*://*.monster.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "monster-ca",
+      "pattern": "*://*.monster.ca/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "monster-co-uk",
+      "pattern": "*://*.monster.co.uk/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "careerbuilder-com",
+      "pattern": "*://*.careerbuilder.com/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "simplyhired-com",
+      "pattern": "*://*.simplyhired.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jooble-org",
+      "pattern": "*://*.jooble.org/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "talent-com",
+      "pattern": "*://*.talent.com/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "adzuna-com",
+      "pattern": "*://*.adzuna.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "adzuna-co-uk",
+      "pattern": "*://*.adzuna.co.uk/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "adzuna-ca",
+      "pattern": "*://*.adzuna.ca/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "adzuna-com-au",
+      "pattern": "*://*.adzuna.com.au/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobrapido-com",
+      "pattern": "*://*.jobrapido.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "careerjet-com",
+      "pattern": "*://*.careerjet.com/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "lensa-com",
+      "pattern": "*://*.lensa.com/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobcase-com",
+      "pattern": "*://*.jobcase.com/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "thejobnetwork-com",
+      "pattern": "*://*.thejobnetwork.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "resume-library-com",
+      "pattern": "*://*.resume-library.com/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "zippia-com",
+      "pattern": "*://*.zippia.com/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "grabjobs-co",
+      "pattern": "*://*.grabjobs.co/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "wellfound-com",
+      "pattern": "*://*.wellfound.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "builtin-com",
+      "pattern": "*://*.builtin.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "dice-com",
+      "pattern": "*://*.dice.com/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "hired-com",
+      "pattern": "*://*.hired.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "otta-com",
+      "pattern": "*://*.otta.com/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "welcometothejungle-com",
+      "pattern": "*://*.welcometothejungle.com/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "ycombinator-com",
+      "pattern": "*://*.ycombinator.com/jobs/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "startup-jobs",
+      "pattern": "*://*.startup.jobs/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "techjobsforgood-com",
+      "pattern": "*://*.techjobsforgood.com/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "levels-fyi",
+      "pattern": "*://*.levels.fyi/jobs/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "remoteok-com",
+      "pattern": "*://*.remoteok.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "weworkremotely-com",
+      "pattern": "*://*.weworkremotely.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "remotive-com",
+      "pattern": "*://*.remotive.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "flexjobs-com",
+      "pattern": "*://*.flexjobs.com/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "workingnomads-com",
+      "pattern": "*://*.workingnomads.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobspresso-co",
+      "pattern": "*://*.jobspresso.co/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "justremote-co",
+      "pattern": "*://*.justremote.co/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "dynamitejobs-com",
+      "pattern": "*://*.dynamitejobs.com/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "nodesk-co",
+      "pattern": "*://*.nodesk.co/remote-jobs/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "arc-dev",
+      "pattern": "*://*.arc.dev/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "turing-com",
+      "pattern": "*://*.turing.com/jobs/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "gun-io",
+      "pattern": "*://*.gun.io/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "contra-com",
+      "pattern": "*://*.contra.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "upwork-com",
+      "pattern": "*://*.upwork.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "freelancer-com",
+      "pattern": "*://*.freelancer.com/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "peopleperhour-com",
+      "pattern": "*://*.peopleperhour.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "getonbrd-com",
+      "pattern": "*://*.getonbrd.com/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "nofluffjobs-com",
+      "pattern": "*://*.nofluffjobs.com/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "justjoin-it",
+      "pattern": "*://*.justjoin.it/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "cord-co",
+      "pattern": "*://*.cord.co/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "joinhandshake-com",
+      "pattern": "*://*.joinhandshake.com/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "app-joinhandshake-com",
+      "pattern": "*://app.joinhandshake.com/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "wayup-com",
+      "pattern": "*://*.wayup.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "internships-com",
+      "pattern": "*://*.internships.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "internshala-com",
+      "pattern": "*://*.internshala.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "idealist-org",
+      "pattern": "*://*.idealist.org/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "usajobs-gov",
+      "pattern": "*://*.usajobs.gov/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "governmentjobs-com",
+      "pattern": "*://*.governmentjobs.com/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "higheredjobs-com",
+      "pattern": "*://*.higheredjobs.com/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "chroniclevitae-com",
+      "pattern": "*://*.chroniclevitae.com/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "schoolspring-com",
+      "pattern": "*://*.schoolspring.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "edjoin-org",
+      "pattern": "*://*.edjoin.org/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-nhs-uk",
+      "pattern": "*://*.jobs.nhs.uk/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "civilservicejobs-service-gov-uk",
+      "pattern": "*://*.civilservicejobs.service.gov.uk/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "findajob-dwp-gov-uk",
+      "pattern": "*://*.findajob.dwp.gov.uk/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "eures-europa-eu",
+      "pattern": "*://*.eures.europa.eu/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobbank-gc-ca",
+      "pattern": "*://*.jobbank.gc.ca/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "workforceaustralia-gov-au",
+      "pattern": "*://*.workforceaustralia.gov.au/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "mycareersfuture-gov-sg",
+      "pattern": "*://*.mycareersfuture.gov.sg/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "boards-greenhouse-io",
+      "pattern": "*://boards.greenhouse.io/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "job-boards-greenhouse-io",
+      "pattern": "*://job-boards.greenhouse.io/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "apply-greenhouse-io",
+      "pattern": "*://apply.greenhouse.io/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-lever-co",
+      "pattern": "*://jobs.lever.co/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-eu-lever-co",
+      "pattern": "*://jobs.eu.lever.co/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-ashbyhq-com",
+      "pattern": "*://jobs.ashbyhq.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "myworkdayjobs-com",
+      "pattern": "*://*.myworkdayjobs.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "workdayjobs-com",
+      "pattern": "*://*.workdayjobs.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-smartrecruiters-com",
+      "pattern": "*://jobs.smartrecruiters.com/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "careers-smartrecruiters-com",
+      "pattern": "*://careers.smartrecruiters.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "icims-com",
+      "pattern": "*://*.icims.com/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "taleo-net",
+      "pattern": "*://*.taleo.net/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "oraclecloud-com",
+      "pattern": "*://*.oraclecloud.com/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "successfactors-com",
+      "pattern": "*://*.successfactors.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "successfactors-eu",
+      "pattern": "*://*.successfactors.eu/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "apply-workable-com",
+      "pattern": "*://apply.workable.com/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-workable-com",
+      "pattern": "*://jobs.workable.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-jobvite-com",
+      "pattern": "*://jobs.jobvite.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobvite-com",
+      "pattern": "*://*.jobvite.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "bamboohr-com",
+      "pattern": "*://*.bamboohr.com/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "breezy-hr",
+      "pattern": "*://*.breezy.hr/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "applytojob-com",
+      "pattern": "*://*.applytojob.com/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jazz-co",
+      "pattern": "*://*.jazz.co/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "recruitee-com",
+      "pattern": "*://*.recruitee.com/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "teamtailor-com",
+      "pattern": "*://*.teamtailor.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "pinpointhq-com",
+      "pattern": "*://*.pinpointhq.com/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "comeet-com",
+      "pattern": "*://*.comeet.com/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-personio-com",
+      "pattern": "*://*.jobs.personio.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-personio-de",
+      "pattern": "*://*.jobs.personio.de/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "personio-com",
+      "pattern": "*://*.personio.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "ats-rippling-com",
+      "pattern": "*://ats.rippling.com/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "workforcenow-adp-com",
+      "pattern": "*://workforcenow.adp.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "recruiting-adp-com",
+      "pattern": "*://recruiting.adp.com/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-adp-com",
+      "pattern": "*://jobs.adp.com/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "recruiting-ultipro-com",
+      "pattern": "*://recruiting.ultipro.com/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "opportunities-ultipro-com",
+      "pattern": "*://opportunities.ultipro.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "ukg-com",
+      "pattern": "*://*.ukg.com/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "ukg-net",
+      "pattern": "*://*.ukg.net/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-dayforcehcm-com",
+      "pattern": "*://jobs.dayforcehcm.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-dayforce-com",
+      "pattern": "*://jobs.dayforce.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "recruiting-paylocity-com",
+      "pattern": "*://recruiting.paylocity.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "paycomonline-net",
+      "pattern": "*://*.paycomonline.net/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-paycor-com",
+      "pattern": "*://jobs.paycor.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "pageuppeople-com",
+      "pattern": "*://*.pageuppeople.com/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "csod-com",
+      "pattern": "*://*.csod.com/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "avature-net",
+      "pattern": "*://*.avature.net/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "avature-com",
+      "pattern": "*://*.avature.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "eightfold-ai",
+      "pattern": "*://*.eightfold.ai/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "phenompeople-com",
+      "pattern": "*://*.phenompeople.com/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "applicantpro-com",
+      "pattern": "*://*.applicantpro.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "applicantstack-com",
+      "pattern": "*://*.applicantstack.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "clearcompany-com",
+      "pattern": "*://*.clearcompany.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "newtonsoftware-com",
+      "pattern": "*://*.newtonsoftware.com/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "catsone-com",
+      "pattern": "*://*.catsone.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "zohorecruit-com",
+      "pattern": "*://*.zohorecruit.com/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "freshteam-com",
+      "pattern": "*://*.freshteam.com/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "hire-trakstar-com",
+      "pattern": "*://hire.trakstar.com/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "manatal-com",
+      "pattern": "*://*.manatal.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-recruitcrm-io",
+      "pattern": "*://jobs.recruitcrm.io/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "loxo-co",
+      "pattern": "*://*.loxo.co/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "app-dover-com",
+      "pattern": "*://app.dover.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-polymer-co",
+      "pattern": "*://jobs.polymer.co/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-gem-com",
+      "pattern": "*://jobs.gem.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "gohire-io",
+      "pattern": "*://*.gohire.io/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "reed-co-uk",
+      "pattern": "*://*.reed.co.uk/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "totaljobs-com",
+      "pattern": "*://*.totaljobs.com/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "cv-library-co-uk",
+      "pattern": "*://*.cv-library.co.uk/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobsite-co-uk",
+      "pattern": "*://*.jobsite.co.uk/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-ie",
+      "pattern": "*://*.jobs.ie/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "irishjobs-ie",
+      "pattern": "*://*.irishjobs.ie/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "nijobs-com",
+      "pattern": "*://*.nijobs.com/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobserve-com",
+      "pattern": "*://*.jobserve.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "ratemyplacement-co-uk",
+      "pattern": "*://*.ratemyplacement.co.uk/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "milkround-com",
+      "pattern": "*://*.milkround.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "stepstone-de",
+      "pattern": "*://*.stepstone.de/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "stepstone-be",
+      "pattern": "*://*.stepstone.be/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "stepstone-nl",
+      "pattern": "*://*.stepstone.nl/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "stepstone-fr",
+      "pattern": "*://*.stepstone.fr/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "xing-com",
+      "pattern": "*://*.xing.com/jobs/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobs-ch",
+      "pattern": "*://*.jobs.ch/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobup-ch",
+      "pattern": "*://*.jobup.ch/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "karriere-at",
+      "pattern": "*://*.karriere.at/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "pracuj-pl",
+      "pattern": "*://*.pracuj.pl/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobindex-dk",
+      "pattern": "*://*.jobindex.dk/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "duunitori-fi",
+      "pattern": "*://*.duunitori.fi/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "oikotie-fi",
+      "pattern": "*://*.oikotie.fi/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "finn-no",
+      "pattern": "*://*.finn.no/job/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "arbeidsplassen-nav-no",
+      "pattern": "*://*.arbeidsplassen.nav.no/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "englishjobs-de",
+      "pattern": "*://*.englishjobs.de/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobsinberlin-eu",
+      "pattern": "*://*.jobsinberlin.eu/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "eurojobs-com",
+      "pattern": "*://*.eurojobs.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "eurobrussels-com",
+      "pattern": "*://*.eurobrussels.com/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "naukri-com",
+      "pattern": "*://*.naukri.com/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "foundit-in",
+      "pattern": "*://*.foundit.in/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "shine-com",
+      "pattern": "*://*.shine.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "timesjobs-com",
+      "pattern": "*://*.timesjobs.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "iimjobs-com",
+      "pattern": "*://*.iimjobs.com/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "instahyre-com",
+      "pattern": "*://*.instahyre.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "hirist-tech",
+      "pattern": "*://*.hirist.tech/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "cutshort-io",
+      "pattern": "*://*.cutshort.io/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "apna-co",
+      "pattern": "*://*.apna.co/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "freshersworld-com",
+      "pattern": "*://*.freshersworld.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "workindia-in",
+      "pattern": "*://*.workindia.in/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "bdjobs-com",
+      "pattern": "*://*.bdjobs.com/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "rozee-pk",
+      "pattern": "*://*.rozee.pk/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "mustakbil-com",
+      "pattern": "*://*.mustakbil.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "seek-com-au",
+      "pattern": "*://*.seek.com.au/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "seek-co-nz",
+      "pattern": "*://*.seek.co.nz/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jora-com",
+      "pattern": "*://*.jora.com/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "careerone-com-au",
+      "pattern": "*://*.careerone.com.au/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobstreet-com",
+      "pattern": "*://*.jobstreet.com/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobsdb-com",
+      "pattern": "*://*.jobsdb.com/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobscentral-com-sg",
+      "pattern": "*://*.jobscentral.com.sg/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "foundit-sg",
+      "pattern": "*://*.foundit.sg/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "foundit-my",
+      "pattern": "*://*.foundit.my/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "foundit-com-ph",
+      "pattern": "*://*.foundit.com.ph/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "kalibrr-com",
+      "pattern": "*://*.kalibrr.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobkorea-co-kr",
+      "pattern": "*://*.jobkorea.co.kr/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "saramin-co-kr",
+      "pattern": "*://*.saramin.co.kr/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "wanted-co-kr",
+      "pattern": "*://*.wanted.co.kr/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "mynavi-jp",
+      "pattern": "*://*.mynavi.jp/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "rikunabi-com",
+      "pattern": "*://*.rikunabi.com/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "doda-jp",
+      "pattern": "*://*.doda.jp/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "en-japan-com",
+      "pattern": "*://*.en-japan.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "daijob-com",
+      "pattern": "*://*.daijob.com/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "gaijinpot-com",
+      "pattern": "*://*.gaijinpot.com/jobs/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "bayt-com",
+      "pattern": "*://*.bayt.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "naukrigulf-com",
+      "pattern": "*://*.naukrigulf.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "gulftalent-com",
+      "pattern": "*://*.gulftalent.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "akhtaboot-com",
+      "pattern": "*://*.akhtaboot.com/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "wuzzuf-net",
+      "pattern": "*://*.wuzzuf.net/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "dubizzle-com",
+      "pattern": "*://*.dubizzle.com/jobs/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "careers24-com",
+      "pattern": "*://*.careers24.com/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "pnet-co-za",
+      "pattern": "*://*.pnet.co.za/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "jobberman-com",
+      "pattern": "*://*.jobberman.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "brightermonday-co-ke",
+      "pattern": "*://*.brightermonday.co.ke/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "brightermonday-co-ug",
+      "pattern": "*://*.brightermonday.co.ug/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "myjobmag-com",
+      "pattern": "*://*.myjobmag.com/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "hotnigerianjobs-com",
+      "pattern": "*://*.hotnigerianjobs.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "computrabajo-com",
+      "pattern": "*://*.computrabajo.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "computrabajo-com-mx",
+      "pattern": "*://*.computrabajo.com.mx/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "computrabajo-com-ar",
+      "pattern": "*://*.computrabajo.com.ar/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "computrabajo-com-co",
+      "pattern": "*://*.computrabajo.com.co/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "computrabajo-cl",
+      "pattern": "*://*.computrabajo.cl/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "computrabajo-com-pe",
+      "pattern": "*://*.computrabajo.com.pe/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "bumeran-com",
+      "pattern": "*://*.bumeran.com/*",
+      "agent": 11,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "bumeran-com-ar",
+      "pattern": "*://*.bumeran.com.ar/*",
+      "agent": 12,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "zonajobs-com-ar",
+      "pattern": "*://*.zonajobs.com.ar/*",
+      "agent": 2,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "laborum-cl",
+      "pattern": "*://*.laborum.cl/*",
+      "agent": 3,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "trabajando-com",
+      "pattern": "*://*.trabajando.com/*",
+      "agent": 4,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "elempleo-com",
+      "pattern": "*://*.elempleo.com/*",
+      "agent": 5,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "catho-com-br",
+      "pattern": "*://*.catho.com.br/*",
+      "agent": 6,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "vagas-com-br",
+      "pattern": "*://*.vagas.com.br/*",
+      "agent": 7,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "gupy-io",
+      "pattern": "*://*.gupy.io/*",
+      "agent": 8,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "infojobs-com-br",
+      "pattern": "*://*.infojobs.com.br/*",
+      "agent": 9,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "infojobs-net",
+      "pattern": "*://*.infojobs.net/*",
+      "agent": 10,
+      "status": "PENDING"
+    },
+    {
+      "siteId": "torre-ai",
+      "pattern": "*://*.torre.ai/*",
+      "agent": 11,
+      "status": "PENDING"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "totalPlatforms": 100,
+  "assignedPlatforms": 100,
+  "completedPlatforms": 100,
+  "passedPlatforms": 2,
+  "failedPlatforms": 0,
+  "blockedPlatforms": 98,
+  "remainingPlatforms": [],
+  "currentBuildChecksum": "6b4eebfca7d471c63ea740ddfa46ed196acf0f4fd885114bee185d7b23ecb56c",
+  "iteration": 1
+}

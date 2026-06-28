@@ -1,0 +1,900 @@
+{
+  "version": 1,
+  "generatedFrom": "src/config/job-sites.json",
+  "note": "Curated worldwide auto-run set (100 platform families). Manifest content_scripts.matches is generated from families[].patterns. Any other job site works via the manual toolbar action (activeTab+scripting).",
+  "supportLevels": [
+    "verified-automatic",
+    "automatic-beta",
+    "manual-generic",
+    "unsupported"
+  ],
+  "totalFamilies": 100,
+  "families": [
+    {
+      "id": "linkedin",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.linkedin.com/jobs/*"
+      ]
+    },
+    {
+      "id": "indeed",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.indeed.ae/*",
+        "*://*.indeed.ca/*",
+        "*://*.indeed.ch/*",
+        "*://*.indeed.co.in/*",
+        "*://*.indeed.co.jp/*",
+        "*://*.indeed.co.uk/*",
+        "*://*.indeed.co.za/*",
+        "*://*.indeed.com.au/*",
+        "*://*.indeed.com.br/*",
+        "*://*.indeed.com.mx/*",
+        "*://*.indeed.com/*",
+        "*://*.indeed.de/*",
+        "*://*.indeed.es/*",
+        "*://*.indeed.fr/*",
+        "*://*.indeed.ie/*",
+        "*://*.indeed.it/*",
+        "*://*.indeed.nl/*",
+        "*://*.indeed.sg/*"
+      ]
+    },
+    {
+      "id": "glassdoor",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.glassdoor.ca/*",
+        "*://*.glassdoor.co.in/*",
+        "*://*.glassdoor.co.uk/*",
+        "*://*.glassdoor.com.au/*",
+        "*://*.glassdoor.com/*",
+        "*://*.glassdoor.de/*",
+        "*://*.glassdoor.fr/*"
+      ]
+    },
+    {
+      "id": "ziprecruiter",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.ziprecruiter.com/*"
+      ]
+    },
+    {
+      "id": "monster",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.monster.ca/*",
+        "*://*.monster.co.uk/*",
+        "*://*.monster.com/*"
+      ]
+    },
+    {
+      "id": "careerbuilder",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.careerbuilder.com/*"
+      ]
+    },
+    {
+      "id": "simplyhired",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.simplyhired.com/*"
+      ]
+    },
+    {
+      "id": "jooble",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jooble.org/*"
+      ]
+    },
+    {
+      "id": "talent",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.talent.com/*"
+      ]
+    },
+    {
+      "id": "adzuna",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.adzuna.ca/*",
+        "*://*.adzuna.co.uk/*",
+        "*://*.adzuna.com.au/*",
+        "*://*.adzuna.com/*"
+      ]
+    },
+    {
+      "id": "jobrapido",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobrapido.com/*"
+      ]
+    },
+    {
+      "id": "careerjet",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.careerjet.com/*"
+      ]
+    },
+    {
+      "id": "dice",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.dice.com/*"
+      ]
+    },
+    {
+      "id": "wellfound",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.wellfound.com/*"
+      ]
+    },
+    {
+      "id": "builtin",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.builtin.com/*"
+      ]
+    },
+    {
+      "id": "remoteok",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.remoteok.com/*"
+      ]
+    },
+    {
+      "id": "weworkremotely",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.weworkremotely.com/*"
+      ]
+    },
+    {
+      "id": "flexjobs",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.flexjobs.com/*"
+      ]
+    },
+    {
+      "id": "jora",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jora.com/*"
+      ]
+    },
+    {
+      "id": "grabjobs",
+      "region": "globalBoards",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.grabjobs.co/*"
+      ]
+    },
+    {
+      "id": "greenhouse",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://apply.greenhouse.io/*",
+        "*://boards.greenhouse.io/*",
+        "*://job-boards.greenhouse.io/*"
+      ]
+    },
+    {
+      "id": "lever",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://jobs.eu.lever.co/*",
+        "*://jobs.lever.co/*"
+      ]
+    },
+    {
+      "id": "ashby",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://jobs.ashbyhq.com/*"
+      ]
+    },
+    {
+      "id": "workday",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.myworkdayjobs.com/*",
+        "*://*.workdayjobs.com/*"
+      ]
+    },
+    {
+      "id": "smartrecruiters",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://careers.smartrecruiters.com/*",
+        "*://jobs.smartrecruiters.com/*"
+      ]
+    },
+    {
+      "id": "icims",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.icims.com/*"
+      ]
+    },
+    {
+      "id": "workable",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://apply.workable.com/*",
+        "*://jobs.workable.com/*"
+      ]
+    },
+    {
+      "id": "jobvite",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobvite.com/*",
+        "*://jobs.jobvite.com/*"
+      ]
+    },
+    {
+      "id": "bamboohr",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.bamboohr.com/*"
+      ]
+    },
+    {
+      "id": "breezy",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.breezy.hr/*"
+      ]
+    },
+    {
+      "id": "jazzhr",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.applytojob.com/*",
+        "*://*.jazz.co/*"
+      ]
+    },
+    {
+      "id": "recruitee",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.recruitee.com/*"
+      ]
+    },
+    {
+      "id": "teamtailor",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.teamtailor.com/*"
+      ]
+    },
+    {
+      "id": "personio",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobs.personio.com/*",
+        "*://*.jobs.personio.de/*",
+        "*://*.personio.com/*"
+      ]
+    },
+    {
+      "id": "oracle-taleo",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.taleo.net/*"
+      ]
+    },
+    {
+      "id": "successfactors",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.successfactors.com/*",
+        "*://*.successfactors.eu/*"
+      ]
+    },
+    {
+      "id": "adp",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://jobs.adp.com/*",
+        "*://recruiting.adp.com/*",
+        "*://workforcenow.adp.com/*"
+      ]
+    },
+    {
+      "id": "ukg-ultipro",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.ukg.com/*",
+        "*://*.ukg.net/*",
+        "*://opportunities.ultipro.com/*",
+        "*://recruiting.ultipro.com/*"
+      ]
+    },
+    {
+      "id": "dayforce",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://jobs.dayforce.com/*",
+        "*://jobs.dayforcehcm.com/*"
+      ]
+    },
+    {
+      "id": "rippling",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://ats.rippling.com/*"
+      ]
+    },
+    {
+      "id": "paylocity",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://recruiting.paylocity.com/*"
+      ]
+    },
+    {
+      "id": "paycom",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.paycomonline.net/*"
+      ]
+    },
+    {
+      "id": "pageup",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.pageuppeople.com/*"
+      ]
+    },
+    {
+      "id": "cornerstone",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.csod.com/*"
+      ]
+    },
+    {
+      "id": "avature",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.avature.com/*",
+        "*://*.avature.net/*"
+      ]
+    },
+    {
+      "id": "eightfold",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.eightfold.ai/*"
+      ]
+    },
+    {
+      "id": "phenom",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.phenompeople.com/*"
+      ]
+    },
+    {
+      "id": "applicantpro",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.applicantpro.com/*"
+      ]
+    },
+    {
+      "id": "freshteam",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.freshteam.com/*"
+      ]
+    },
+    {
+      "id": "zohorecruit",
+      "region": "globalATS",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.zohorecruit.com/*"
+      ]
+    },
+    {
+      "id": "handshake",
+      "region": "northAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.joinhandshake.com/*",
+        "*://app.joinhandshake.com/*"
+      ]
+    },
+    {
+      "id": "usajobs",
+      "region": "northAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.usajobs.gov/*"
+      ]
+    },
+    {
+      "id": "governmentjobs",
+      "region": "northAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.governmentjobs.com/*"
+      ]
+    },
+    {
+      "id": "higheredjobs",
+      "region": "northAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.higheredjobs.com/*"
+      ]
+    },
+    {
+      "id": "idealist",
+      "region": "northAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.idealist.org/*"
+      ]
+    },
+    {
+      "id": "canada-job-bank",
+      "region": "northAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobbank.gc.ca/*"
+      ]
+    },
+    {
+      "id": "eluta",
+      "region": "northAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.eluta.ca/*"
+      ]
+    },
+    {
+      "id": "reed",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.reed.co.uk/*"
+      ]
+    },
+    {
+      "id": "totaljobs",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.totaljobs.com/*"
+      ]
+    },
+    {
+      "id": "cv-library",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.cv-library.co.uk/*"
+      ]
+    },
+    {
+      "id": "jobsite-uk",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobsite.co.uk/*"
+      ]
+    },
+    {
+      "id": "irishjobs",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.irishjobs.ie/*"
+      ]
+    },
+    {
+      "id": "stepstone",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.stepstone.be/*",
+        "*://*.stepstone.de/*",
+        "*://*.stepstone.fr/*",
+        "*://*.stepstone.nl/*"
+      ]
+    },
+    {
+      "id": "xing-jobs",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.xing.com/jobs/*"
+      ]
+    },
+    {
+      "id": "jobs-ch",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobs.ch/*"
+      ]
+    },
+    {
+      "id": "jobup",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobup.ch/*"
+      ]
+    },
+    {
+      "id": "karriere-at",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.karriere.at/*"
+      ]
+    },
+    {
+      "id": "pracuj",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.pracuj.pl/*"
+      ]
+    },
+    {
+      "id": "jobindex",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobindex.dk/*"
+      ]
+    },
+    {
+      "id": "duunitori",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.duunitori.fi/*"
+      ]
+    },
+    {
+      "id": "finn-jobs",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.finn.no/job/*"
+      ]
+    },
+    {
+      "id": "eures",
+      "region": "ukAndEurope",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.eures.europa.eu/*"
+      ]
+    },
+    {
+      "id": "naukri",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.naukri.com/*"
+      ]
+    },
+    {
+      "id": "foundit",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.foundit.com.ph/*",
+        "*://*.foundit.in/*",
+        "*://*.foundit.my/*",
+        "*://*.foundit.sg/*"
+      ]
+    },
+    {
+      "id": "internshala",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.internshala.com/*"
+      ]
+    },
+    {
+      "id": "seek",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.seek.co.nz/*",
+        "*://*.seek.com.au/*"
+      ]
+    },
+    {
+      "id": "jobstreet",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobstreet.com/*"
+      ]
+    },
+    {
+      "id": "jobsdb",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobsdb.com/*"
+      ]
+    },
+    {
+      "id": "mycareersfuture",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.mycareersfuture.gov.sg/*"
+      ]
+    },
+    {
+      "id": "workforce-australia",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.workforceaustralia.gov.au/*"
+      ]
+    },
+    {
+      "id": "jobkorea",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobkorea.co.kr/*"
+      ]
+    },
+    {
+      "id": "saramin",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.saramin.co.kr/*"
+      ]
+    },
+    {
+      "id": "wanted-korea",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.wanted.co.kr/*"
+      ]
+    },
+    {
+      "id": "doda-japan",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.doda.jp/*"
+      ]
+    },
+    {
+      "id": "mynavi-japan",
+      "region": "indiaAndAsiaPacific",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.mynavi.jp/*"
+      ]
+    },
+    {
+      "id": "bayt",
+      "region": "middleEastAndAfrica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.bayt.com/*"
+      ]
+    },
+    {
+      "id": "naukrigulf",
+      "region": "middleEastAndAfrica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.naukrigulf.com/*"
+      ]
+    },
+    {
+      "id": "gulftalent",
+      "region": "middleEastAndAfrica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.gulftalent.com/*"
+      ]
+    },
+    {
+      "id": "wuzzuf",
+      "region": "middleEastAndAfrica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.wuzzuf.net/*"
+      ]
+    },
+    {
+      "id": "careers24",
+      "region": "middleEastAndAfrica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.careers24.com/*"
+      ]
+    },
+    {
+      "id": "pnet",
+      "region": "middleEastAndAfrica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.pnet.co.za/*"
+      ]
+    },
+    {
+      "id": "jobberman",
+      "region": "middleEastAndAfrica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.jobberman.com/*"
+      ]
+    },
+    {
+      "id": "computrabajo",
+      "region": "latinAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.computrabajo.cl/*",
+        "*://*.computrabajo.com.ar/*",
+        "*://*.computrabajo.com.co/*",
+        "*://*.computrabajo.com.mx/*",
+        "*://*.computrabajo.com.pe/*",
+        "*://*.computrabajo.com/*"
+      ]
+    },
+    {
+      "id": "bumeran",
+      "region": "latinAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.bumeran.com.ar/*",
+        "*://*.bumeran.com/*"
+      ]
+    },
+    {
+      "id": "zonajobs",
+      "region": "latinAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.zonajobs.com.ar/*"
+      ]
+    },
+    {
+      "id": "laborum",
+      "region": "latinAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.laborum.cl/*"
+      ]
+    },
+    {
+      "id": "elempleo",
+      "region": "latinAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.elempleo.com/*"
+      ]
+    },
+    {
+      "id": "catho",
+      "region": "latinAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.catho.com.br/*"
+      ]
+    },
+    {
+      "id": "vagas",
+      "region": "latinAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.vagas.com.br/*"
+      ]
+    },
+    {
+      "id": "gupy",
+      "region": "latinAmerica",
+      "supportLevel": "automatic-beta",
+      "patterns": [
+        "*://*.gupy.io/*"
+      ]
+    }
+  ],
+  "manualFallback": {
+    "enabled": true,
+    "permission": "activeTab",
+    "buttonLabel": "Run Role Reveal on this job",
+    "description": "Allows the user to run Role Reveal manually on company career sites with custom domains."
+  },
+  "pageValidation": {
+    "requireTopFrame": true,
+    "requireCanonicalJobKey": true,
+    "minimumTitleLength": 3,
+    "minimumCompanyLength": 2,
+    "minimumDescriptionLength": 200,
+    "acceptedSignals": [
+      "job-posting-json-ld",
+      "known-job-url",
+      "known-ats-selector"
+    ],
+    "rejectPageTypes": [
+      "search-results-without-selected-job",
+      "generic-career-homepage",
+      "login-page",
+      "application-form",
+      "employer-homepage",
+      "ats-dashboard"
+    ]
+  }
+}

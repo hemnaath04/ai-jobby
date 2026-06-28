@@ -3,14 +3,23 @@ import {
   resolveMatchPatterns,
   isValidMatchPattern,
   MATCH_PATTERNS,
+  FAMILIES,
 } from './patterns';
 
 const BANNED = ['<all_urls>', '*://*/*', 'https://*/*', 'http://*/*', '*://*'];
 
+describe('worldwide families', () => {
+  it('has exactly 100 platform families, each with >=1 pattern', () => {
+    expect(FAMILIES.length).toBe(100);
+    for (const f of FAMILIES) expect(f.patterns.length).toBeGreaterThan(0);
+    expect(new Set(FAMILIES.map((f) => f.id)).size).toBe(100);
+  });
+});
+
 describe('resolveMatchPatterns', () => {
-  it('returns 252 valid patterns, 0 removed, 0 duplicates', () => {
+  it('returns the 160 valid worldwide patterns, 0 removed, 0 duplicates', () => {
     const r = resolveMatchPatterns();
-    expect(r.patterns.length).toBe(252);
+    expect(r.patterns.length).toBe(160);
     expect(r.removed.length).toBe(0);
     expect(r.duplicates.length).toBe(0);
   });

@@ -1,0 +1,9 @@
+{
+  "extensionFailures": [],
+  "byStatus": {
+    "NO_PUBLIC_TEST_URL": 69,
+    "SITE_BLOCKED": 27,
+    "PASS": 2,
+    "CAPTCHA_PRESENT": 2
+  }
+}

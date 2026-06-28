@@ -1,0 +1,110 @@
+[
+  {
+    "siteId": "greenhouse",
+    "pattern": "*://job-boards.greenhouse.io/*",
+    "testedUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5023394008",
+    "browser": "brave-headless",
+    "browserVersion": "Chrome/149.0.7827.201",
+    "extensionBuildChecksum": "6b4eebfca7d471c63ea740ddfa46ed196acf0f4fd885114bee185d7b23ecb56c",
+    "status": "PASS",
+    "extensionLoaded": true,
+    "serviceWorkerDetected": true,
+    "automaticInjection": true,
+    "hardRefreshUsed": false,
+    "validJobDetected": true,
+    "rootCount": 1,
+    "panelVisible": true,
+    "jobTitleMatched": true,
+    "companyMatched": true,
+    "spaNavigationTested": false,
+    "spaNavigationPassed": false,
+    "dismissalTested": true,
+    "dismissalPassed": true,
+    "duplicateRequests": 0,
+    "consoleErrors": [],
+    "extensionErrors": [],
+    "screenshots": [
+      "/Users/hemnaath/ai-jobby/test-results/screenshots/greenhouse/panel-1440.png",
+      "/Users/hemnaath/ai-jobby/test-results/screenshots/greenhouse/panel-1920.png",
+      "/Users/hemnaath/ai-jobby/test-results/screenshots/greenhouse/after-close.png"
+    ],
+    "notes": "title=\"Anthropic Fellows Program\" score=15 bars=[\"25%\",\"5%\",\"10%\"]; dismissClicked=true rootsAfter=0; ",
+    "scoreInRange": true,
+    "whyPresent": true,
+    "watchPresent": true,
+    "bars": [
+      "25%",
+      "5%",
+      "10%"
+    ],
+    "visual": {
+      "x": 294,
+      "y": 270,
+      "width": 852,
+      "height": 381,
+      "viewportWidth": 1440,
+      "viewportHeight": 900,
+      "clippedLeft": false,
+      "clippedRight": false,
+      "horizontalOverflow": false
+    },
+    "visual1920": {
+      "rootCount": 1,
+      "horizontalOverflow": false
+    }
+  },
+  {
+    "siteId": "lever",
+    "pattern": "*://jobs.lever.co/*",
+    "testedUrl": "https://jobs.lever.co/mistral/7894fd8a-ffc9-4c89-87f0-f8a7b695cf01",
+    "browser": "brave-headless",
+    "browserVersion": "Chrome/149.0.7827.201",
+    "extensionBuildChecksum": "6b4eebfca7d471c63ea740ddfa46ed196acf0f4fd885114bee185d7b23ecb56c",
+    "status": "PASS",
+    "extensionLoaded": true,
+    "serviceWorkerDetected": true,
+    "automaticInjection": true,
+    "hardRefreshUsed": false,
+    "validJobDetected": true,
+    "rootCount": 1,
+    "panelVisible": true,
+    "jobTitleMatched": true,
+    "companyMatched": true,
+    "spaNavigationTested": false,
+    "spaNavigationPassed": false,
+    "dismissalTested": true,
+    "dismissalPassed": true,
+    "duplicateRequests": 0,
+    "consoleErrors": [],
+    "extensionErrors": [],
+    "screenshots": [
+      "/Users/hemnaath/ai-jobby/test-results/screenshots/lever/panel-1440.png",
+      "/Users/hemnaath/ai-jobby/test-results/screenshots/lever/panel-1920.png",
+      "/Users/hemnaath/ai-jobby/test-results/screenshots/lever/after-close.png"
+    ],
+    "notes": "title=\"Account Executive – AI for Citizens · AI for Citizens\" score=5 bars=[\"15%\",\"2%\",\"2%\"]; dismissClicked=true rootsAfter=0; ",
+    "scoreInRange": true,
+    "whyPresent": true,
+    "watchPresent": true,
+    "bars": [
+      "15%",
+      "2%",
+      "2%"
+    ],
+    "visual": {
+      "x": 30,
+      "y": 318.375,
+      "width": 1380,
+      "height": 361.5,
+      "viewportWidth": 1440,
+      "viewportHeight": 900,
+      "clippedLeft": false,
+      "clippedRight": false,
+      "horizontalOverflow": false
+    },
+    "visual1920": {
+      "rootCount": 1,
+      "horizontalOverflow": false
+    }
+  }
+]

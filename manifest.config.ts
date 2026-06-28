@@ -2,11 +2,11 @@ import { defineManifest } from '@crxjs/vite-plugin';
 import pkg from './package.json';
 import { MATCH_PATTERNS } from './src/config/patterns';
 
-// Auto-run sites come straight from src/config/job-sites.json (validated +
-// de-duplicated in src/config/patterns.ts) — the single source of truth. There
-// is no second copy of the patterns here. On every other site RoleReveal stays
-// inert until the user clicks "Run Role Reveal on this job" (activeTab +
-// scripting), so the extension never needs broad host access.
+// Auto-run sites come straight from src/config/worldwide-launch-sites.json — the
+// curated 100 platform families (validated + de-duplicated in src/config/patterns.ts),
+// the single source of truth. There is no second copy of the patterns here. On
+// every other site RoleReveal stays inert until the user clicks "Run Role Reveal
+// on this job" (activeTab + scripting), so the extension never needs broad host access.
 const JOB_SITE_MATCHES = MATCH_PATTERNS;
 
 // The LLM endpoints the background service worker is allowed to call. Scoped to

@@ -1,0 +1,17 @@
+{
+  "browser": "brave-headless",
+  "checks": {
+    "serviceWorkerExists": true,
+    "swUrlIsExtension": true,
+    "runtimeIdRetrieved": true,
+    "extensionPageOpens": true,
+    "manifestVersionMatches": true,
+    "manifestMatchesCount": true,
+    "contentScriptInjected": true,
+    "roleRevealRootAppears": true
+  },
+  "extensionId": "dfacgjmhpdchkaofkjeinngackhmmijo",
+  "browserVersion": "Chrome/149.0.7827.201",
+  "rootCount": 1,
+  "pass": true
+}

@@ -1,11 +1,27 @@
 // ---------------------------------------------------------------------------
-// Single source of truth for which sites RoleReveal auto-runs on. The match
-// patterns live in job-sites.json; this module validates + dedupes them and is
+// Single source of truth for which sites RoleReveal auto-runs on. The curated
+// worldwide set (100 platform families → narrow host patterns) lives in
+// worldwide-launch-sites.json; this module validates + dedupes them and is
 // consumed by BOTH the build (manifest.config.ts generates content_scripts.matches
-// from here) and the runtime (page validation). There is no second copy of the
-// patterns anywhere.
+// from here) and the runtime (page validation). Any site NOT in this set works
+// through the manual toolbar action (activeTab + scripting). There is no second
+// copy of the patterns anywhere.
 // ---------------------------------------------------------------------------
-import jobSites from './job-sites.json';
+import worldwide from './worldwide-launch-sites.json';
+
+/** How well a platform is supported (Phase 3). */
+export type SupportLevel =
+  | 'verified-automatic'
+  | 'automatic-beta'
+  | 'manual-generic'
+  | 'unsupported';
+
+export interface PlatformFamily {
+  id: string;
+  region: string;
+  supportLevel: SupportLevel;
+  patterns: string[];
+}
 
 export interface PageValidationConfig {
   requireTopFrame: boolean;
@@ -17,8 +33,9 @@ export interface PageValidationConfig {
   rejectPageTypes: string[];
 }
 
-export const PAGE_VALIDATION: PageValidationConfig = jobSites.pageValidation;
-export const MANUAL_FALLBACK = jobSites.manualFallback;
+export const FAMILIES: PlatformFamily[] = worldwide.families as PlatformFamily[];
+export const PAGE_VALIDATION: PageValidationConfig = worldwide.pageValidation;
+export const MANUAL_FALLBACK = worldwide.manualFallback;
 
 // Broad patterns we refuse to emit even if present in the config — they would
 // defeat the whole point (and slow Web Store review).
@@ -40,14 +57,14 @@ export function isValidMatchPattern(p: string): boolean {
 }
 
 export interface PatternResult {
-  patterns: string[]; // valid, de-duplicated, in original order
-  removed: string[]; // invalid / banned, for reporting
-  duplicates: string[]; // exact duplicates dropped
+  patterns: string[];
+  removed: string[];
+  duplicates: string[];
 }
 
-/** Validate + dedupe the configured auto-run patterns. */
+/** Validate + dedupe the configured worldwide auto-run patterns. */
 export function resolveMatchPatterns(): PatternResult {
-  const raw: string[] = jobSites.autoRun.matchPatterns;
+  const raw: string[] = FAMILIES.flatMap((f) => f.patterns);
   const seen = new Set<string>();
   const patterns: string[] = [];
   const removed: string[] = [];

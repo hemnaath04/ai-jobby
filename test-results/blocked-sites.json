@@ -1,0 +1,884 @@
+[
+  {
+    "family": "linkedin",
+    "region": "globalBoards",
+    "pattern": "*://*.linkedin.com/jobs/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "indeed",
+    "region": "globalBoards",
+    "pattern": "*://*.indeed.ae/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "glassdoor",
+    "region": "globalBoards",
+    "pattern": "*://*.glassdoor.ca/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "403 HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "ziprecruiter",
+    "region": "globalBoards",
+    "pattern": "*://*.ziprecruiter.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "monster",
+    "region": "globalBoards",
+    "pattern": "*://*.monster.ca/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "403 HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "careerbuilder",
+    "region": "globalBoards",
+    "pattern": "*://*.careerbuilder.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "403 HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "simplyhired",
+    "region": "globalBoards",
+    "pattern": "*://*.simplyhired.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jooble",
+    "region": "globalBoards",
+    "pattern": "*://*.jooble.org/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "talent",
+    "region": "globalBoards",
+    "pattern": "*://*.talent.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "adzuna",
+    "region": "globalBoards",
+    "pattern": "*://*.adzuna.ca/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 405,
+    "reason": "domain reachable (HTTP 405); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jobrapido",
+    "region": "globalBoards",
+    "pattern": "*://*.jobrapido.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "careerjet",
+    "region": "globalBoards",
+    "pattern": "*://*.careerjet.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 200,
+    "reason": "cloudflare challenge HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "dice",
+    "region": "globalBoards",
+    "pattern": "*://*.dice.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "wellfound",
+    "region": "globalBoards",
+    "pattern": "*://*.wellfound.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "builtin",
+    "region": "globalBoards",
+    "pattern": "*://*.builtin.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "remoteok",
+    "region": "globalBoards",
+    "pattern": "*://*.remoteok.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "weworkremotely",
+    "region": "globalBoards",
+    "pattern": "*://*.weworkremotely.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "flexjobs",
+    "region": "globalBoards",
+    "pattern": "*://*.flexjobs.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jora",
+    "region": "globalBoards",
+    "pattern": "*://*.jora.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "grabjobs",
+    "region": "globalBoards",
+    "pattern": "*://*.grabjobs.co/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "ashby",
+    "region": "globalATS",
+    "pattern": "*://jobs.ashbyhq.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 404,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 404",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "workday",
+    "region": "globalATS",
+    "pattern": "*://*.myworkdayjobs.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 0,
+    "reason": "no response/blocked (TypeError) HTTP 0",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "smartrecruiters",
+    "region": "globalATS",
+    "pattern": "*://careers.smartrecruiters.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 404,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 404",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "icims",
+    "region": "globalATS",
+    "pattern": "*://*.icims.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "workable",
+    "region": "globalATS",
+    "pattern": "*://apply.workable.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 200,
+    "reason": "cloudflare challenge HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jobvite",
+    "region": "globalATS",
+    "pattern": "*://*.jobvite.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "bamboohr",
+    "region": "globalATS",
+    "pattern": "*://*.bamboohr.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "breezy",
+    "region": "globalATS",
+    "pattern": "*://*.breezy.hr/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jazzhr",
+    "region": "globalATS",
+    "pattern": "*://*.applytojob.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "recruitee",
+    "region": "globalATS",
+    "pattern": "*://*.recruitee.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "teamtailor",
+    "region": "globalATS",
+    "pattern": "*://*.teamtailor.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "personio",
+    "region": "globalATS",
+    "pattern": "*://*.jobs.personio.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 0,
+    "reason": "no response/blocked (TypeError) HTTP 0",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "oracle-taleo",
+    "region": "globalATS",
+    "pattern": "*://*.taleo.net/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 0,
+    "reason": "no response/blocked (TypeError) HTTP 0",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "successfactors",
+    "region": "globalATS",
+    "pattern": "*://*.successfactors.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "adp",
+    "region": "globalATS",
+    "pattern": "*://jobs.adp.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "ukg-ultipro",
+    "region": "globalATS",
+    "pattern": "*://*.ukg.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "dayforce",
+    "region": "globalATS",
+    "pattern": "*://jobs.dayforce.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 0,
+    "reason": "no response/blocked (TypeError) HTTP 0",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "rippling",
+    "region": "globalATS",
+    "pattern": "*://ats.rippling.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "paylocity",
+    "region": "globalATS",
+    "pattern": "*://recruiting.paylocity.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "paycom",
+    "region": "globalATS",
+    "pattern": "*://*.paycomonline.net/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "pageup",
+    "region": "globalATS",
+    "pattern": "*://*.pageuppeople.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "cornerstone",
+    "region": "globalATS",
+    "pattern": "*://*.csod.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "avature",
+    "region": "globalATS",
+    "pattern": "*://*.avature.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "eightfold",
+    "region": "globalATS",
+    "pattern": "*://*.eightfold.ai/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 200,
+    "reason": "cloudflare challenge HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "phenom",
+    "region": "globalATS",
+    "pattern": "*://*.phenompeople.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "applicantpro",
+    "region": "globalATS",
+    "pattern": "*://*.applicantpro.com/*",
+    "status": "CAPTCHA_PRESENT",
+    "httpStatus": 200,
+    "reason": "captcha/bot wall HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "freshteam",
+    "region": "globalATS",
+    "pattern": "*://*.freshteam.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 502,
+    "reason": "server 502 HTTP 502",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "zohorecruit",
+    "region": "globalATS",
+    "pattern": "*://*.zohorecruit.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "handshake",
+    "region": "northAmerica",
+    "pattern": "*://*.joinhandshake.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "usajobs",
+    "region": "northAmerica",
+    "pattern": "*://*.usajobs.gov/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "governmentjobs",
+    "region": "northAmerica",
+    "pattern": "*://*.governmentjobs.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 200,
+    "reason": "cloudflare challenge HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "higheredjobs",
+    "region": "northAmerica",
+    "pattern": "*://*.higheredjobs.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "idealist",
+    "region": "northAmerica",
+    "pattern": "*://*.idealist.org/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "canada-job-bank",
+    "region": "northAmerica",
+    "pattern": "*://*.jobbank.gc.ca/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "eluta",
+    "region": "northAmerica",
+    "pattern": "*://*.eluta.ca/*",
+    "status": "CAPTCHA_PRESENT",
+    "httpStatus": 200,
+    "reason": "captcha/bot wall HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "reed",
+    "region": "ukAndEurope",
+    "pattern": "*://*.reed.co.uk/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "totaljobs",
+    "region": "ukAndEurope",
+    "pattern": "*://*.totaljobs.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "cv-library",
+    "region": "ukAndEurope",
+    "pattern": "*://*.cv-library.co.uk/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jobsite-uk",
+    "region": "ukAndEurope",
+    "pattern": "*://*.jobsite.co.uk/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "irishjobs",
+    "region": "ukAndEurope",
+    "pattern": "*://*.irishjobs.ie/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "stepstone",
+    "region": "ukAndEurope",
+    "pattern": "*://*.stepstone.be/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "xing-jobs",
+    "region": "ukAndEurope",
+    "pattern": "*://*.xing.com/jobs/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jobs-ch",
+    "region": "ukAndEurope",
+    "pattern": "*://*.jobs.ch/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jobup",
+    "region": "ukAndEurope",
+    "pattern": "*://*.jobup.ch/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "karriere-at",
+    "region": "ukAndEurope",
+    "pattern": "*://*.karriere.at/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "pracuj",
+    "region": "ukAndEurope",
+    "pattern": "*://*.pracuj.pl/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jobindex",
+    "region": "ukAndEurope",
+    "pattern": "*://*.jobindex.dk/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "duunitori",
+    "region": "ukAndEurope",
+    "pattern": "*://*.duunitori.fi/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "finn-jobs",
+    "region": "ukAndEurope",
+    "pattern": "*://*.finn.no/job/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "eures",
+    "region": "ukAndEurope",
+    "pattern": "*://*.eures.europa.eu/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "naukri",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.naukri.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "foundit",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.foundit.com.ph/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "internshala",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.internshala.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "seek",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.seek.co.nz/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jobstreet",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.jobstreet.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jobsdb",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.jobsdb.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "mycareersfuture",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.mycareersfuture.gov.sg/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "workforce-australia",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.workforceaustralia.gov.au/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jobkorea",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.jobkorea.co.kr/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "saramin",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.saramin.co.kr/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "wanted-korea",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.wanted.co.kr/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "doda-japan",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.doda.jp/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "mynavi-japan",
+    "region": "indiaAndAsiaPacific",
+    "pattern": "*://*.mynavi.jp/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "bayt",
+    "region": "middleEastAndAfrica",
+    "pattern": "*://*.bayt.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "naukrigulf",
+    "region": "middleEastAndAfrica",
+    "pattern": "*://*.naukrigulf.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "gulftalent",
+    "region": "middleEastAndAfrica",
+    "pattern": "*://*.gulftalent.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "wuzzuf",
+    "region": "middleEastAndAfrica",
+    "pattern": "*://*.wuzzuf.net/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "careers24",
+    "region": "middleEastAndAfrica",
+    "pattern": "*://*.careers24.com/*",
+    "status": "SITE_BLOCKED",
+    "httpStatus": 403,
+    "reason": "cloudflare challenge HTTP 403",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "pnet",
+    "region": "middleEastAndAfrica",
+    "pattern": "*://*.pnet.co.za/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "jobberman",
+    "region": "middleEastAndAfrica",
+    "pattern": "*://*.jobberman.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "computrabajo",
+    "region": "latinAmerica",
+    "pattern": "*://*.computrabajo.cl/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "bumeran",
+    "region": "latinAmerica",
+    "pattern": "*://*.bumeran.com.ar/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "zonajobs",
+    "region": "latinAmerica",
+    "pattern": "*://*.zonajobs.com.ar/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "laborum",
+    "region": "latinAmerica",
+    "pattern": "*://*.laborum.cl/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "elempleo",
+    "region": "latinAmerica",
+    "pattern": "*://*.elempleo.com/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "catho",
+    "region": "latinAmerica",
+    "pattern": "*://*.catho.com.br/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "vagas",
+    "region": "latinAmerica",
+    "pattern": "*://*.vagas.com.br/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "domain reachable (HTTP 200); no automated public job-URL discovery — manual verification procedure provided",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  },
+  {
+    "family": "gupy",
+    "region": "latinAmerica",
+    "pattern": "*://*.gupy.io/*",
+    "status": "NO_PUBLIC_TEST_URL",
+    "httpStatus": 200,
+    "reason": "ATS tenant-gated: public job needs a specific company subdomain HTTP 200",
+    "manualVerification": "In a headed Brave window (signed in if required), open a public job posting matching the pattern; confirm RoleReveal auto-appears once (no refresh) with a 0-100 score + Why/Watch-outs, and stays closed after Close. Sites outside the 100 also work via the manual toolbar action."
+  }
+]

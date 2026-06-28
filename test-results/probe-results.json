@@ -1,0 +1,2522 @@
+[
+  {
+    "siteId": "linkedin-com",
+    "pattern": "*://*.linkedin.com/jobs/*",
+    "testedUrl": "https://linkedin.com/jobs/",
+    "finalUrl": "https://www.linkedin.com/jobs/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "indeed-com",
+    "pattern": "*://*.indeed.com/*",
+    "testedUrl": "https://indeed.com/",
+    "finalUrl": "https://indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-ca",
+    "pattern": "*://*.indeed.ca/*",
+    "testedUrl": "https://indeed.ca/",
+    "finalUrl": "https://ca.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-co-uk",
+    "pattern": "*://*.indeed.co.uk/*",
+    "testedUrl": "https://indeed.co.uk/",
+    "finalUrl": "https://uk.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-com-au",
+    "pattern": "*://*.indeed.com.au/*",
+    "testedUrl": "https://indeed.com.au/",
+    "finalUrl": "https://au.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-co-in",
+    "pattern": "*://*.indeed.co.in/*",
+    "testedUrl": "https://indeed.co.in/",
+    "finalUrl": "https://in.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-de",
+    "pattern": "*://*.indeed.de/*",
+    "testedUrl": "https://indeed.de/",
+    "finalUrl": "https://de.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-fr",
+    "pattern": "*://*.indeed.fr/*",
+    "testedUrl": "https://indeed.fr/",
+    "finalUrl": "https://fr.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-es",
+    "pattern": "*://*.indeed.es/*",
+    "testedUrl": "https://indeed.es/",
+    "finalUrl": "https://es.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-it",
+    "pattern": "*://*.indeed.it/*",
+    "testedUrl": "https://indeed.it/",
+    "finalUrl": "https://digitalindeed.it/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "indeed-nl",
+    "pattern": "*://*.indeed.nl/*",
+    "testedUrl": "https://indeed.nl/",
+    "finalUrl": "https://nl.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-ie",
+    "pattern": "*://*.indeed.ie/*",
+    "testedUrl": "https://indeed.ie/",
+    "finalUrl": "https://ie.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-ch",
+    "pattern": "*://*.indeed.ch/*",
+    "testedUrl": "https://indeed.ch/",
+    "finalUrl": "https://ch.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-co-jp",
+    "pattern": "*://*.indeed.co.jp/*",
+    "testedUrl": "https://indeed.co.jp/",
+    "finalUrl": "https://indeed.co.jp/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "access denied HTTP 403"
+  },
+  {
+    "siteId": "indeed-sg",
+    "pattern": "*://*.indeed.sg/*",
+    "testedUrl": "https://indeed.sg/",
+    "finalUrl": "https://sg.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-ae",
+    "pattern": "*://*.indeed.ae/*",
+    "testedUrl": "https://indeed.ae/",
+    "finalUrl": "https://ae.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-co-za",
+    "pattern": "*://*.indeed.co.za/*",
+    "testedUrl": "https://indeed.co.za/",
+    "finalUrl": "https://za.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-com-br",
+    "pattern": "*://*.indeed.com.br/*",
+    "testedUrl": "https://indeed.com.br/",
+    "finalUrl": "https://br.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "indeed-com-mx",
+    "pattern": "*://*.indeed.com.mx/*",
+    "testedUrl": "https://indeed.com.mx/",
+    "finalUrl": "https://mx.indeed.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "glassdoor-com",
+    "pattern": "*://*.glassdoor.com/*",
+    "testedUrl": "https://glassdoor.com/",
+    "finalUrl": "https://glassdoor.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "glassdoor-ca",
+    "pattern": "*://*.glassdoor.ca/*",
+    "testedUrl": "https://glassdoor.ca/",
+    "finalUrl": "https://www.glassdoor.ca/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "glassdoor-co-uk",
+    "pattern": "*://*.glassdoor.co.uk/*",
+    "testedUrl": "https://glassdoor.co.uk/",
+    "finalUrl": "https://www.glassdoor.co.uk/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "glassdoor-com-au",
+    "pattern": "*://*.glassdoor.com.au/*",
+    "testedUrl": "https://glassdoor.com.au/",
+    "finalUrl": "https://www.glassdoor.com.au/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "glassdoor-co-in",
+    "pattern": "*://*.glassdoor.co.in/*",
+    "testedUrl": "https://glassdoor.co.in/",
+    "finalUrl": "https://www.glassdoor.co.in/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "glassdoor-de",
+    "pattern": "*://*.glassdoor.de/*",
+    "testedUrl": "https://glassdoor.de/",
+    "finalUrl": "https://www.glassdoor.de/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "glassdoor-fr",
+    "pattern": "*://*.glassdoor.fr/*",
+    "testedUrl": "https://glassdoor.fr/",
+    "finalUrl": "https://www.glassdoor.fr/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "ziprecruiter-com",
+    "pattern": "*://*.ziprecruiter.com/*",
+    "testedUrl": "https://ziprecruiter.com/",
+    "finalUrl": "https://www.ziprecruiter.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "monster-com",
+    "pattern": "*://*.monster.com/*",
+    "testedUrl": "https://monster.com/",
+    "finalUrl": "https://www.monster.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "monster-ca",
+    "pattern": "*://*.monster.ca/*",
+    "testedUrl": "https://monster.ca/",
+    "finalUrl": "https://www.monster.com/resume/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "monster-co-uk",
+    "pattern": "*://*.monster.co.uk/*",
+    "testedUrl": "https://monster.co.uk/",
+    "finalUrl": "https://www.monster.com/resume/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "careerbuilder-com",
+    "pattern": "*://*.careerbuilder.com/*",
+    "testedUrl": "https://careerbuilder.com/",
+    "finalUrl": "https://www.careerbuilder.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "simplyhired-com",
+    "pattern": "*://*.simplyhired.com/*",
+    "testedUrl": "https://simplyhired.com/",
+    "finalUrl": "https://simplyhired.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "jooble-org",
+    "pattern": "*://*.jooble.org/*",
+    "testedUrl": "https://jooble.org/",
+    "finalUrl": "https://jooble.org/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "talent-com",
+    "pattern": "*://*.talent.com/*",
+    "testedUrl": "https://talent.com/",
+    "finalUrl": "https://www.talent.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "adzuna-com",
+    "pattern": "*://*.adzuna.com/*",
+    "testedUrl": "https://adzuna.com/",
+    "finalUrl": "https://www.adzuna.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "adzuna-co-uk",
+    "pattern": "*://*.adzuna.co.uk/*",
+    "testedUrl": "https://adzuna.co.uk/",
+    "finalUrl": "https://www.adzuna.co.uk/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "adzuna-ca",
+    "pattern": "*://*.adzuna.ca/*",
+    "testedUrl": "https://adzuna.ca/",
+    "finalUrl": "https://adzuna.ca/",
+    "browser": "node-probe",
+    "httpStatus": 405,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 405); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "adzuna-com-au",
+    "pattern": "*://*.adzuna.com.au/*",
+    "testedUrl": "https://adzuna.com.au/",
+    "finalUrl": "https://www.adzuna.com.au/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobrapido-com",
+    "pattern": "*://*.jobrapido.com/*",
+    "testedUrl": "https://jobrapido.com/",
+    "finalUrl": "https://us.jobrapido.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "careerjet-com",
+    "pattern": "*://*.careerjet.com/*",
+    "testedUrl": "https://careerjet.com/",
+    "finalUrl": "https://www.careerjet.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "lensa-com",
+    "pattern": "*://*.lensa.com/*",
+    "testedUrl": "https://lensa.com/",
+    "finalUrl": "https://lensa.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobcase-com",
+    "pattern": "*://*.jobcase.com/*",
+    "testedUrl": "https://jobcase.com/",
+    "finalUrl": "https://www.jobcase.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "thejobnetwork-com",
+    "pattern": "*://*.thejobnetwork.com/*",
+    "testedUrl": "https://thejobnetwork.com/",
+    "finalUrl": "https://www.thejobnetwork.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "resume-library-com",
+    "pattern": "*://*.resume-library.com/*",
+    "testedUrl": "https://resume-library.com/",
+    "finalUrl": "https://www.resume-library.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "zippia-com",
+    "pattern": "*://*.zippia.com/*",
+    "testedUrl": "https://zippia.com/",
+    "finalUrl": "https://www.zippia.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "grabjobs-co",
+    "pattern": "*://*.grabjobs.co/*",
+    "testedUrl": "https://grabjobs.co/",
+    "finalUrl": "https://grabjobs.co/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "wellfound-com",
+    "pattern": "*://*.wellfound.com/*",
+    "testedUrl": "https://wellfound.com/",
+    "finalUrl": "https://wellfound.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "builtin-com",
+    "pattern": "*://*.builtin.com/*",
+    "testedUrl": "https://builtin.com/",
+    "finalUrl": "https://builtin.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "dice-com",
+    "pattern": "*://*.dice.com/*",
+    "testedUrl": "https://dice.com/",
+    "finalUrl": "https://www.dice.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "hired-com",
+    "pattern": "*://*.hired.com/*",
+    "testedUrl": "https://hired.com/",
+    "finalUrl": "https://www.lhh.com/en-us/about-us/our-story",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "otta-com",
+    "pattern": "*://*.otta.com/*",
+    "testedUrl": "https://otta.com/",
+    "finalUrl": "https://uk.welcometothejungle.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "welcometothejungle-com",
+    "pattern": "*://*.welcometothejungle.com/*",
+    "testedUrl": "https://welcometothejungle.com/",
+    "finalUrl": "https://www.welcometothejungle.com/en",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "ycombinator-com",
+    "pattern": "*://*.ycombinator.com/jobs/*",
+    "testedUrl": "https://ycombinator.com/jobs/",
+    "finalUrl": "https://www.ycombinator.com/jobs/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "startup-jobs",
+    "pattern": "*://*.startup.jobs/*",
+    "testedUrl": "https://startup.jobs/",
+    "finalUrl": "https://startup.jobs/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "techjobsforgood-com",
+    "pattern": "*://*.techjobsforgood.com/*",
+    "testedUrl": "https://techjobsforgood.com/",
+    "finalUrl": "https://techjobsforgood.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "levels-fyi",
+    "pattern": "*://*.levels.fyi/jobs/*",
+    "testedUrl": "https://levels.fyi/jobs/",
+    "finalUrl": "https://www.levels.fyi/jobs",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "remoteok-com",
+    "pattern": "*://*.remoteok.com/*",
+    "testedUrl": "https://remoteok.com/",
+    "finalUrl": "https://remoteok.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "weworkremotely-com",
+    "pattern": "*://*.weworkremotely.com/*",
+    "testedUrl": "https://weworkremotely.com/",
+    "finalUrl": "https://weworkremotely.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "remotive-com",
+    "pattern": "*://*.remotive.com/*",
+    "testedUrl": "https://remotive.com/",
+    "finalUrl": "https://remotive.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "flexjobs-com",
+    "pattern": "*://*.flexjobs.com/*",
+    "testedUrl": "https://flexjobs.com/",
+    "finalUrl": "https://www.flexjobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "workingnomads-com",
+    "pattern": "*://*.workingnomads.com/*",
+    "testedUrl": "https://workingnomads.com/",
+    "finalUrl": "https://www.workingnomads.com/jobs",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobspresso-co",
+    "pattern": "*://*.jobspresso.co/*",
+    "testedUrl": "https://jobspresso.co/",
+    "finalUrl": "https://jobspresso.co/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "justremote-co",
+    "pattern": "*://*.justremote.co/*",
+    "testedUrl": "https://justremote.co/",
+    "finalUrl": "https://justremote.co/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "dynamitejobs-com",
+    "pattern": "*://*.dynamitejobs.com/*",
+    "testedUrl": "https://dynamitejobs.com/",
+    "finalUrl": "https://dynamitejobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "nodesk-co",
+    "pattern": "*://*.nodesk.co/remote-jobs/*",
+    "testedUrl": "https://nodesk.co/remote-jobs/",
+    "finalUrl": "https://nodesk.co/remote-jobs/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "arc-dev",
+    "pattern": "*://*.arc.dev/*",
+    "testedUrl": "https://arc.dev/",
+    "finalUrl": "https://arc.dev/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "turing-com",
+    "pattern": "*://*.turing.com/jobs/*",
+    "testedUrl": "https://turing.com/jobs/",
+    "finalUrl": "https://www.turing.com/jobs",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "gun-io",
+    "pattern": "*://*.gun.io/*",
+    "testedUrl": "https://gun.io/",
+    "finalUrl": "https://gun.io/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "contra-com",
+    "pattern": "*://*.contra.com/*",
+    "testedUrl": "https://contra.com/",
+    "finalUrl": "https://contra.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "upwork-com",
+    "pattern": "*://*.upwork.com/*",
+    "testedUrl": "https://upwork.com/",
+    "finalUrl": "https://upwork.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "freelancer-com",
+    "pattern": "*://*.freelancer.com/*",
+    "testedUrl": "https://freelancer.com/",
+    "finalUrl": "https://www.freelancer.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "peopleperhour-com",
+    "pattern": "*://*.peopleperhour.com/*",
+    "testedUrl": "https://peopleperhour.com/",
+    "finalUrl": "https://www.peopleperhour.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "getonbrd-com",
+    "pattern": "*://*.getonbrd.com/*",
+    "testedUrl": "https://getonbrd.com/",
+    "finalUrl": "https://getonbrd.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "nofluffjobs-com",
+    "pattern": "*://*.nofluffjobs.com/*",
+    "testedUrl": "https://nofluffjobs.com/",
+    "finalUrl": "https://nofluffjobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "justjoin-it",
+    "pattern": "*://*.justjoin.it/*",
+    "testedUrl": "https://justjoin.it/",
+    "finalUrl": "https://justjoin.it/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "cord-co",
+    "pattern": "*://*.cord.co/*",
+    "testedUrl": "https://cord.co/",
+    "finalUrl": "https://cord.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "joinhandshake-com",
+    "pattern": "*://*.joinhandshake.com/*",
+    "testedUrl": "https://joinhandshake.com/",
+    "finalUrl": "https://joinhandshake.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "app-joinhandshake-com",
+    "pattern": "*://app.joinhandshake.com/*",
+    "testedUrl": "https://app.joinhandshake.com/",
+    "finalUrl": "https://app.joinhandshake.com/access?access_state_id=-nJdGXN1aY8ZTzlijYVuIg",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "wayup-com",
+    "pattern": "*://*.wayup.com/*",
+    "testedUrl": "https://wayup.com/",
+    "finalUrl": "https://www.wayup.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "internships-com",
+    "pattern": "*://*.internships.com/*",
+    "testedUrl": "https://internships.com/",
+    "finalUrl": "https://www.internships.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "internshala-com",
+    "pattern": "*://*.internshala.com/*",
+    "testedUrl": "https://internshala.com/",
+    "finalUrl": "https://internshala.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "idealist-org",
+    "pattern": "*://*.idealist.org/*",
+    "testedUrl": "https://idealist.org/",
+    "finalUrl": "https://www.idealist.org/en",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "usajobs-gov",
+    "pattern": "*://*.usajobs.gov/*",
+    "testedUrl": "https://usajobs.gov/",
+    "finalUrl": "https://www.usajobs.gov/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "governmentjobs-com",
+    "pattern": "*://*.governmentjobs.com/*",
+    "testedUrl": "https://governmentjobs.com/",
+    "finalUrl": "https://www.governmentjobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "higheredjobs-com",
+    "pattern": "*://*.higheredjobs.com/*",
+    "testedUrl": "https://higheredjobs.com/",
+    "finalUrl": "https://higheredjobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "chroniclevitae-com",
+    "pattern": "*://*.chroniclevitae.com/*",
+    "testedUrl": "https://chroniclevitae.com/",
+    "finalUrl": "https://www.chronicle.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "schoolspring-com",
+    "pattern": "*://*.schoolspring.com/*",
+    "testedUrl": "https://schoolspring.com/",
+    "finalUrl": "https://www.schoolspring.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "edjoin-org",
+    "pattern": "*://*.edjoin.org/*",
+    "testedUrl": "https://edjoin.org/",
+    "finalUrl": "https://edjoin.org/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobs-nhs-uk",
+    "pattern": "*://*.jobs.nhs.uk/*",
+    "testedUrl": "https://jobs.nhs.uk/",
+    "finalUrl": "https://jobs.nhs.uk/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "civilservicejobs-service-gov-uk",
+    "pattern": "*://*.civilservicejobs.service.gov.uk/*",
+    "testedUrl": "https://civilservicejobs.service.gov.uk/",
+    "finalUrl": "https://www.civilservicejobs.service.gov.uk/csr/index.cgi",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "findajob-dwp-gov-uk",
+    "pattern": "*://*.findajob.dwp.gov.uk/*",
+    "testedUrl": "https://findajob.dwp.gov.uk/",
+    "finalUrl": "https://www.jobs.service.gov.uk/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "eures-europa-eu",
+    "pattern": "*://*.eures.europa.eu/*",
+    "testedUrl": "https://eures.europa.eu/",
+    "finalUrl": "https://eures.europa.eu/select-language?destination=/node/1137",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobbank-gc-ca",
+    "pattern": "*://*.jobbank.gc.ca/*",
+    "testedUrl": "https://jobbank.gc.ca/",
+    "finalUrl": "https://www.jobbank.gc.ca/home",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "workforceaustralia-gov-au",
+    "pattern": "*://*.workforceaustralia.gov.au/*",
+    "testedUrl": "https://workforceaustralia.gov.au/",
+    "finalUrl": "https://www.workforceaustralia.gov.au/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "mycareersfuture-gov-sg",
+    "pattern": "*://*.mycareersfuture.gov.sg/*",
+    "testedUrl": "https://mycareersfuture.gov.sg/",
+    "finalUrl": "https://www.mycareersfuture.gov.sg/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "boards-greenhouse-io",
+    "pattern": "*://boards.greenhouse.io/*",
+    "testedUrl": "https://boards.greenhouse.io/",
+    "finalUrl": "https://www.greenhouse.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "job-boards-greenhouse-io",
+    "pattern": "*://job-boards.greenhouse.io/*",
+    "testedUrl": "https://job-boards.greenhouse.io/",
+    "finalUrl": "https://www.greenhouse.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "PASS",
+    "notes": "live-verified headless this build"
+  },
+  {
+    "siteId": "apply-greenhouse-io",
+    "pattern": "*://apply.greenhouse.io/*",
+    "testedUrl": "https://apply.greenhouse.io/",
+    "finalUrl": "https://apply.greenhouse.io/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "jobs-lever-co",
+    "pattern": "*://jobs.lever.co/*",
+    "testedUrl": "https://jobs.lever.co/",
+    "finalUrl": "https://www.lever.co/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "PASS",
+    "notes": "live-verified headless this build"
+  },
+  {
+    "siteId": "jobs-eu-lever-co",
+    "pattern": "*://jobs.eu.lever.co/*",
+    "testedUrl": "https://jobs.eu.lever.co/",
+    "finalUrl": "https://www.lever.co/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobs-ashbyhq-com",
+    "pattern": "*://jobs.ashbyhq.com/*",
+    "testedUrl": "https://jobs.ashbyhq.com/",
+    "finalUrl": "https://jobs.ashbyhq.com/",
+    "browser": "node-probe",
+    "httpStatus": 404,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 404"
+  },
+  {
+    "siteId": "myworkdayjobs-com",
+    "pattern": "*://*.myworkdayjobs.com/*",
+    "testedUrl": "https://myworkdayjobs.com/",
+    "finalUrl": "https://myworkdayjobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "workdayjobs-com",
+    "pattern": "*://*.workdayjobs.com/*",
+    "testedUrl": "https://workdayjobs.com/",
+    "finalUrl": "https://workdayjobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "jobs-smartrecruiters-com",
+    "pattern": "*://jobs.smartrecruiters.com/*",
+    "testedUrl": "https://jobs.smartrecruiters.com/",
+    "finalUrl": "https://jobs.smartrecruiters.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "careers-smartrecruiters-com",
+    "pattern": "*://careers.smartrecruiters.com/*",
+    "testedUrl": "https://careers.smartrecruiters.com/",
+    "finalUrl": "https://careers.smartrecruiters.com/",
+    "browser": "node-probe",
+    "httpStatus": 404,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 404"
+  },
+  {
+    "siteId": "icims-com",
+    "pattern": "*://*.icims.com/*",
+    "testedUrl": "https://icims.com/",
+    "finalUrl": "https://www.icims.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "taleo-net",
+    "pattern": "*://*.taleo.net/*",
+    "testedUrl": "https://taleo.net/",
+    "finalUrl": "https://taleo.net/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "oraclecloud-com",
+    "pattern": "*://*.oraclecloud.com/*",
+    "testedUrl": "https://oraclecloud.com/",
+    "finalUrl": "https://www.oracle.com/cloud/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "successfactors-com",
+    "pattern": "*://*.successfactors.com/*",
+    "testedUrl": "https://successfactors.com/",
+    "finalUrl": "https://www.sap.com/products/hcm/about-successfactors.html?src=sfsf",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "successfactors-eu",
+    "pattern": "*://*.successfactors.eu/*",
+    "testedUrl": "https://successfactors.eu/",
+    "finalUrl": "https://www.sap.com/products/hcm/about-successfactors.html?src=sfsf",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "apply-workable-com",
+    "pattern": "*://apply.workable.com/*",
+    "testedUrl": "https://apply.workable.com/",
+    "finalUrl": "https://apply.workable.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "jobs-workable-com",
+    "pattern": "*://jobs.workable.com/*",
+    "testedUrl": "https://jobs.workable.com/",
+    "finalUrl": "https://jobs.workable.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobs-jobvite-com",
+    "pattern": "*://jobs.jobvite.com/*",
+    "testedUrl": "https://jobs.jobvite.com/",
+    "finalUrl": "https://www.jobvite.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "jobvite-com",
+    "pattern": "*://*.jobvite.com/*",
+    "testedUrl": "https://jobvite.com/",
+    "finalUrl": "https://www.jobvite.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "bamboohr-com",
+    "pattern": "*://*.bamboohr.com/*",
+    "testedUrl": "https://bamboohr.com/",
+    "finalUrl": "https://www.bamboohr.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "breezy-hr",
+    "pattern": "*://*.breezy.hr/*",
+    "testedUrl": "https://breezy.hr/",
+    "finalUrl": "https://breezy.hr/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "applytojob-com",
+    "pattern": "*://*.applytojob.com/*",
+    "testedUrl": "https://applytojob.com/",
+    "finalUrl": "https://www.jazzhr.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "jazz-co",
+    "pattern": "*://*.jazz.co/*",
+    "testedUrl": "https://jazz.co/",
+    "finalUrl": "https://www.jazzhr.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "recruitee-com",
+    "pattern": "*://*.recruitee.com/*",
+    "testedUrl": "https://recruitee.com/",
+    "finalUrl": "https://recruitee.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "teamtailor-com",
+    "pattern": "*://*.teamtailor.com/*",
+    "testedUrl": "https://teamtailor.com/",
+    "finalUrl": "https://www.teamtailor.com/en-us/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "pinpointhq-com",
+    "pattern": "*://*.pinpointhq.com/*",
+    "testedUrl": "https://pinpointhq.com/",
+    "finalUrl": "https://www.pinpointhq.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "comeet-com",
+    "pattern": "*://*.comeet.com/*",
+    "testedUrl": "https://comeet.com/",
+    "finalUrl": "https://www.comeet.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "jobs-personio-com",
+    "pattern": "*://*.jobs.personio.com/*",
+    "testedUrl": "https://jobs.personio.com/",
+    "finalUrl": "https://jobs.personio.com/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "jobs-personio-de",
+    "pattern": "*://*.jobs.personio.de/*",
+    "testedUrl": "https://jobs.personio.de/",
+    "finalUrl": "https://jobs.personio.de/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "personio-com",
+    "pattern": "*://*.personio.com/*",
+    "testedUrl": "https://personio.com/",
+    "finalUrl": "https://personio.com/",
+    "browser": "node-probe",
+    "httpStatus": 429,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 429"
+  },
+  {
+    "siteId": "ats-rippling-com",
+    "pattern": "*://ats.rippling.com/*",
+    "testedUrl": "https://ats.rippling.com/",
+    "finalUrl": "https://www.rippling.com/products/hr/recruiting",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "workforcenow-adp-com",
+    "pattern": "*://workforcenow.adp.com/*",
+    "testedUrl": "https://workforcenow.adp.com/",
+    "finalUrl": "https://online.adp.com/olp/olplanding.html?APPID=WFNPORTAL",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "recruiting-adp-com",
+    "pattern": "*://recruiting.adp.com/*",
+    "testedUrl": "https://recruiting.adp.com/",
+    "finalUrl": "https://online.adp.com/olp/olplanding.html?APPID=ADPRECRUIT_A1",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "jobs-adp-com",
+    "pattern": "*://jobs.adp.com/*",
+    "testedUrl": "https://jobs.adp.com/",
+    "finalUrl": "https://jobs.adp.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "recruiting-ultipro-com",
+    "pattern": "*://recruiting.ultipro.com/*",
+    "testedUrl": "https://recruiting.ultipro.com/",
+    "finalUrl": "https://recruiting.ultipro.com/JobBoardView",
+    "browser": "node-probe",
+    "httpStatus": 404,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 404"
+  },
+  {
+    "siteId": "opportunities-ultipro-com",
+    "pattern": "*://opportunities.ultipro.com/*",
+    "testedUrl": "https://opportunities.ultipro.com/",
+    "finalUrl": "https://opportunities.ultipro.com/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "ukg-com",
+    "pattern": "*://*.ukg.com/*",
+    "testedUrl": "https://ukg.com/",
+    "finalUrl": "https://www.ukg.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "ukg-net",
+    "pattern": "*://*.ukg.net/*",
+    "testedUrl": "https://ukg.net/",
+    "finalUrl": "https://ukg.net/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "jobs-dayforcehcm-com",
+    "pattern": "*://jobs.dayforcehcm.com/*",
+    "testedUrl": "https://jobs.dayforcehcm.com/",
+    "finalUrl": "https://jobs.dayforcehcm.com/",
+    "browser": "node-probe",
+    "httpStatus": 404,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 404"
+  },
+  {
+    "siteId": "jobs-dayforce-com",
+    "pattern": "*://jobs.dayforce.com/*",
+    "testedUrl": "https://jobs.dayforce.com/",
+    "finalUrl": "https://jobs.dayforce.com/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "recruiting-paylocity-com",
+    "pattern": "*://recruiting.paylocity.com/*",
+    "testedUrl": "https://recruiting.paylocity.com/",
+    "finalUrl": "https://recruiting.paylocity.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "paycomonline-net",
+    "pattern": "*://*.paycomonline.net/*",
+    "testedUrl": "https://paycomonline.net/",
+    "finalUrl": "https://www.paycom.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "jobs-paycor-com",
+    "pattern": "*://jobs.paycor.com/*",
+    "testedUrl": "https://jobs.paycor.com/",
+    "finalUrl": "https://jobs.paycor.com/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "pageuppeople-com",
+    "pattern": "*://*.pageuppeople.com/*",
+    "testedUrl": "https://pageuppeople.com/",
+    "finalUrl": "https://www.pageuppeople.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "csod-com",
+    "pattern": "*://*.csod.com/*",
+    "testedUrl": "https://csod.com/",
+    "finalUrl": "https://www.cornerstoneondemand.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "avature-net",
+    "pattern": "*://*.avature.net/*",
+    "testedUrl": "https://avature.net/",
+    "finalUrl": "https://www.avature.net/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "avature-com",
+    "pattern": "*://*.avature.com/*",
+    "testedUrl": "https://avature.com/",
+    "finalUrl": "https://www.dynamo.com/assets.htm",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "eightfold-ai",
+    "pattern": "*://*.eightfold.ai/*",
+    "testedUrl": "https://eightfold.ai/",
+    "finalUrl": "https://eightfold.ai/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "phenompeople-com",
+    "pattern": "*://*.phenompeople.com/*",
+    "testedUrl": "https://phenompeople.com/",
+    "finalUrl": "https://www.phenom.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "applicantpro-com",
+    "pattern": "*://*.applicantpro.com/*",
+    "testedUrl": "https://applicantpro.com/",
+    "finalUrl": "https://www.applicantpro.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "CAPTCHA_PRESENT",
+    "notes": "bot/captcha challenge HTTP 200"
+  },
+  {
+    "siteId": "applicantstack-com",
+    "pattern": "*://*.applicantstack.com/*",
+    "testedUrl": "https://applicantstack.com/",
+    "finalUrl": "https://www.applicantstack.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "clearcompany-com",
+    "pattern": "*://*.clearcompany.com/*",
+    "testedUrl": "https://clearcompany.com/",
+    "finalUrl": "https://clearcompany.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "newtonsoftware-com",
+    "pattern": "*://*.newtonsoftware.com/*",
+    "testedUrl": "https://newtonsoftware.com/",
+    "finalUrl": "https://www.paycor.com/newton-software",
+    "browser": "node-probe",
+    "httpStatus": 404,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 404"
+  },
+  {
+    "siteId": "catsone-com",
+    "pattern": "*://*.catsone.com/*",
+    "testedUrl": "https://catsone.com/",
+    "finalUrl": "https://catsone.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "zohorecruit-com",
+    "pattern": "*://*.zohorecruit.com/*",
+    "testedUrl": "https://zohorecruit.com/",
+    "finalUrl": "https://www.zoho.com/recruit/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "freshteam-com",
+    "pattern": "*://*.freshteam.com/*",
+    "testedUrl": "https://freshteam.com/",
+    "finalUrl": "https://freshteam.com/",
+    "browser": "node-probe",
+    "httpStatus": 502,
+    "status": "SITE_BLOCKED",
+    "notes": "server 502 HTTP 502"
+  },
+  {
+    "siteId": "hire-trakstar-com",
+    "pattern": "*://hire.trakstar.com/*",
+    "testedUrl": "https://hire.trakstar.com/",
+    "finalUrl": "https://hire.trakstar.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "manatal-com",
+    "pattern": "*://*.manatal.com/*",
+    "testedUrl": "https://manatal.com/",
+    "finalUrl": "https://www.manatal.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "jobs-recruitcrm-io",
+    "pattern": "*://jobs.recruitcrm.io/*",
+    "testedUrl": "https://jobs.recruitcrm.io/",
+    "finalUrl": "https://jobs.recruitcrm.io/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "loxo-co",
+    "pattern": "*://*.loxo.co/*",
+    "testedUrl": "https://loxo.co/",
+    "finalUrl": "https://www.loxo.co/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "app-dover-com",
+    "pattern": "*://app.dover.com/*",
+    "testedUrl": "https://app.dover.com/",
+    "finalUrl": "https://app.dover.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 200"
+  },
+  {
+    "siteId": "jobs-polymer-co",
+    "pattern": "*://jobs.polymer.co/*",
+    "testedUrl": "https://jobs.polymer.co/",
+    "finalUrl": "https://jobs.polymer.co/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "jobs-gem-com",
+    "pattern": "*://jobs.gem.com/*",
+    "testedUrl": "https://jobs.gem.com/",
+    "finalUrl": "https://jobs.gem.com/",
+    "browser": "node-probe",
+    "httpStatus": 404,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 404"
+  },
+  {
+    "siteId": "gohire-io",
+    "pattern": "*://*.gohire.io/*",
+    "testedUrl": "https://gohire.io/",
+    "finalUrl": "https://gohire.io/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "reed-co-uk",
+    "pattern": "*://*.reed.co.uk/*",
+    "testedUrl": "https://reed.co.uk/",
+    "finalUrl": "https://www.reed.co.uk/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "totaljobs-com",
+    "pattern": "*://*.totaljobs.com/*",
+    "testedUrl": "https://totaljobs.com/",
+    "finalUrl": "https://www.totaljobs.com/onboarding",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "cv-library-co-uk",
+    "pattern": "*://*.cv-library.co.uk/*",
+    "testedUrl": "https://cv-library.co.uk/",
+    "finalUrl": "https://www.cv-library.co.uk/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobsite-co-uk",
+    "pattern": "*://*.jobsite.co.uk/*",
+    "testedUrl": "https://jobsite.co.uk/",
+    "finalUrl": "https://www.jobsite.co.uk/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobs-ie",
+    "pattern": "*://*.jobs.ie/*",
+    "testedUrl": "https://jobs.ie/",
+    "finalUrl": "https://www.jobs.ie/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "irishjobs-ie",
+    "pattern": "*://*.irishjobs.ie/*",
+    "testedUrl": "https://irishjobs.ie/",
+    "finalUrl": "https://www.irishjobs.ie/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "nijobs-com",
+    "pattern": "*://*.nijobs.com/*",
+    "testedUrl": "https://nijobs.com/",
+    "finalUrl": "https://www.nijobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobserve-com",
+    "pattern": "*://*.jobserve.com/*",
+    "testedUrl": "https://jobserve.com/",
+    "finalUrl": "https://jobserve.com/us/en/Job-Search/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "ratemyplacement-co-uk",
+    "pattern": "*://*.ratemyplacement.co.uk/*",
+    "testedUrl": "https://ratemyplacement.co.uk/",
+    "finalUrl": "https://higherin.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "milkround-com",
+    "pattern": "*://*.milkround.com/*",
+    "testedUrl": "https://milkround.com/",
+    "finalUrl": "https://www.milkround.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "stepstone-de",
+    "pattern": "*://*.stepstone.de/*",
+    "testedUrl": "https://stepstone.de/",
+    "finalUrl": "https://www.stepstone.de/onboarding",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "stepstone-be",
+    "pattern": "*://*.stepstone.be/*",
+    "testedUrl": "https://stepstone.be/",
+    "finalUrl": "https://www.stepstone.be/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "stepstone-nl",
+    "pattern": "*://*.stepstone.nl/*",
+    "testedUrl": "https://stepstone.nl/",
+    "finalUrl": "https://www.stepstone.nl/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "stepstone-fr",
+    "pattern": "*://*.stepstone.fr/*",
+    "testedUrl": "https://stepstone.fr/",
+    "finalUrl": "https://www.thestepstonegroup.com/english/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "xing-com",
+    "pattern": "*://*.xing.com/jobs/*",
+    "testedUrl": "https://xing.com/jobs/",
+    "finalUrl": "https://www.xing.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobs-ch",
+    "pattern": "*://*.jobs.ch/*",
+    "testedUrl": "https://jobs.ch/",
+    "finalUrl": "https://www.jobs.ch/de/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobup-ch",
+    "pattern": "*://*.jobup.ch/*",
+    "testedUrl": "https://jobup.ch/",
+    "finalUrl": "https://www.jobup.ch/fr/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "karriere-at",
+    "pattern": "*://*.karriere.at/*",
+    "testedUrl": "https://karriere.at/",
+    "finalUrl": "https://www.karriere.at/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "pracuj-pl",
+    "pattern": "*://*.pracuj.pl/*",
+    "testedUrl": "https://pracuj.pl/",
+    "finalUrl": "https://www.pracuj.pl/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "jobindex-dk",
+    "pattern": "*://*.jobindex.dk/*",
+    "testedUrl": "https://jobindex.dk/",
+    "finalUrl": "https://www.jobindex.dk/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "duunitori-fi",
+    "pattern": "*://*.duunitori.fi/*",
+    "testedUrl": "https://duunitori.fi/",
+    "finalUrl": "https://duunitori.fi/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "oikotie-fi",
+    "pattern": "*://*.oikotie.fi/*",
+    "testedUrl": "https://oikotie.fi/",
+    "finalUrl": "https://asunnot.oikotie.fi/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "finn-no",
+    "pattern": "*://*.finn.no/job/*",
+    "testedUrl": "https://finn.no/job/",
+    "finalUrl": "https://www.finn.no/job/browse.html",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "arbeidsplassen-nav-no",
+    "pattern": "*://*.arbeidsplassen.nav.no/*",
+    "testedUrl": "https://arbeidsplassen.nav.no/",
+    "finalUrl": "https://arbeidsplassen.nav.no/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "englishjobs-de",
+    "pattern": "*://*.englishjobs.de/*",
+    "testedUrl": "https://englishjobs.de/",
+    "finalUrl": "https://englishjobs.de/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobsinberlin-eu",
+    "pattern": "*://*.jobsinberlin.eu/*",
+    "testedUrl": "https://jobsinberlin.eu/",
+    "finalUrl": "https://jobsinberlin.eu/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "eurojobs-com",
+    "pattern": "*://*.eurojobs.com/*",
+    "testedUrl": "https://eurojobs.com/",
+    "finalUrl": "https://eurojobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "eurobrussels-com",
+    "pattern": "*://*.eurobrussels.com/*",
+    "testedUrl": "https://eurobrussels.com/",
+    "finalUrl": "https://www.eurobrussels.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "naukri-com",
+    "pattern": "*://*.naukri.com/*",
+    "testedUrl": "https://naukri.com/",
+    "finalUrl": "https://www.naukri.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "foundit-in",
+    "pattern": "*://*.foundit.in/*",
+    "testedUrl": "https://foundit.in/",
+    "finalUrl": "https://www.foundit.in/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "shine-com",
+    "pattern": "*://*.shine.com/*",
+    "testedUrl": "https://shine.com/",
+    "finalUrl": "https://shine.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "timesjobs-com",
+    "pattern": "*://*.timesjobs.com/*",
+    "testedUrl": "https://timesjobs.com/",
+    "finalUrl": "https://timesjobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "iimjobs-com",
+    "pattern": "*://*.iimjobs.com/*",
+    "testedUrl": "https://iimjobs.com/",
+    "finalUrl": "https://www.iimjobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "instahyre-com",
+    "pattern": "*://*.instahyre.com/*",
+    "testedUrl": "https://instahyre.com/",
+    "finalUrl": "https://instahyre.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "hirist-tech",
+    "pattern": "*://*.hirist.tech/*",
+    "testedUrl": "https://hirist.tech/",
+    "finalUrl": "https://www.hirist.tech/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "cutshort-io",
+    "pattern": "*://*.cutshort.io/*",
+    "testedUrl": "https://cutshort.io/",
+    "finalUrl": "https://cutshort.io/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "apna-co",
+    "pattern": "*://*.apna.co/*",
+    "testedUrl": "https://apna.co/",
+    "finalUrl": "https://apna.co/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "freshersworld-com",
+    "pattern": "*://*.freshersworld.com/*",
+    "testedUrl": "https://freshersworld.com/",
+    "finalUrl": "https://www.freshersworld.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "workindia-in",
+    "pattern": "*://*.workindia.in/*",
+    "testedUrl": "https://workindia.in/",
+    "finalUrl": "https://www.workindia.in/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "bdjobs-com",
+    "pattern": "*://*.bdjobs.com/*",
+    "testedUrl": "https://bdjobs.com/",
+    "finalUrl": "https://bdjobs.com/h/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "rozee-pk",
+    "pattern": "*://*.rozee.pk/*",
+    "testedUrl": "https://rozee.pk/",
+    "finalUrl": "https://rozee.pk/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "mustakbil-com",
+    "pattern": "*://*.mustakbil.com/*",
+    "testedUrl": "https://mustakbil.com/",
+    "finalUrl": "https://www.mustakbil.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "seek-com-au",
+    "pattern": "*://*.seek.com.au/*",
+    "testedUrl": "https://seek.com.au/",
+    "finalUrl": "https://www.seek.com.au/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "403 HTTP 403"
+  },
+  {
+    "siteId": "seek-co-nz",
+    "pattern": "*://*.seek.co.nz/*",
+    "testedUrl": "https://seek.co.nz/",
+    "finalUrl": "https://www.seek.co.nz/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "jora-com",
+    "pattern": "*://*.jora.com/*",
+    "testedUrl": "https://jora.com/",
+    "finalUrl": "https://jora.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "careerone-com-au",
+    "pattern": "*://*.careerone.com.au/*",
+    "testedUrl": "https://careerone.com.au/",
+    "finalUrl": "https://www.careerone.com.au/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobstreet-com",
+    "pattern": "*://*.jobstreet.com/*",
+    "testedUrl": "https://jobstreet.com/",
+    "finalUrl": "https://www.jobstreet.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "jobsdb-com",
+    "pattern": "*://*.jobsdb.com/*",
+    "testedUrl": "https://jobsdb.com/",
+    "finalUrl": "https://www.jobsdb.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "jobscentral-com-sg",
+    "pattern": "*://*.jobscentral.com.sg/*",
+    "testedUrl": "https://jobscentral.com.sg/",
+    "finalUrl": "https://jobscentral.com.sg/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "foundit-sg",
+    "pattern": "*://*.foundit.sg/*",
+    "testedUrl": "https://foundit.sg/",
+    "finalUrl": "https://www.foundit.sg/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "foundit-my",
+    "pattern": "*://*.foundit.my/*",
+    "testedUrl": "https://foundit.my/",
+    "finalUrl": "https://www.foundit.my/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "foundit-com-ph",
+    "pattern": "*://*.foundit.com.ph/*",
+    "testedUrl": "https://foundit.com.ph/",
+    "finalUrl": "https://www.foundit.com.ph/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "kalibrr-com",
+    "pattern": "*://*.kalibrr.com/*",
+    "testedUrl": "https://kalibrr.com/",
+    "finalUrl": "https://www.kalibrr.com/home",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobkorea-co-kr",
+    "pattern": "*://*.jobkorea.co.kr/*",
+    "testedUrl": "https://jobkorea.co.kr/",
+    "finalUrl": "https://www.jobkorea.co.kr/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "saramin-co-kr",
+    "pattern": "*://*.saramin.co.kr/*",
+    "testedUrl": "https://saramin.co.kr/",
+    "finalUrl": "https://www.saramin.co.kr/zf_user/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "wanted-co-kr",
+    "pattern": "*://*.wanted.co.kr/*",
+    "testedUrl": "https://wanted.co.kr/",
+    "finalUrl": "https://www.wanted.co.kr/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "mynavi-jp",
+    "pattern": "*://*.mynavi.jp/*",
+    "testedUrl": "https://mynavi.jp/",
+    "finalUrl": "https://www.mynavi.jp/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "rikunabi-com",
+    "pattern": "*://*.rikunabi.com/*",
+    "testedUrl": "https://rikunabi.com/",
+    "finalUrl": "https://rikunabi.com/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "doda-jp",
+    "pattern": "*://*.doda.jp/*",
+    "testedUrl": "https://doda.jp/",
+    "finalUrl": "https://doda.jp/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "en-japan-com",
+    "pattern": "*://*.en-japan.com/*",
+    "testedUrl": "https://en-japan.com/",
+    "finalUrl": "https://en-japan.com/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "daijob-com",
+    "pattern": "*://*.daijob.com/*",
+    "testedUrl": "https://daijob.com/",
+    "finalUrl": "https://daijob.com/",
+    "browser": "node-probe",
+    "httpStatus": 0,
+    "status": "SITE_BLOCKED",
+    "notes": "no response / connection blocked (TypeError) HTTP 0"
+  },
+  {
+    "siteId": "gaijinpot-com",
+    "pattern": "*://*.gaijinpot.com/jobs/*",
+    "testedUrl": "https://gaijinpot.com/jobs/",
+    "finalUrl": "https://gaijinpot.com/jobs/",
+    "browser": "node-probe",
+    "httpStatus": 404,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 404); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "bayt-com",
+    "pattern": "*://*.bayt.com/*",
+    "testedUrl": "https://bayt.com/",
+    "finalUrl": "https://www.bayt.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "naukrigulf-com",
+    "pattern": "*://*.naukrigulf.com/*",
+    "testedUrl": "https://naukrigulf.com/",
+    "finalUrl": "https://www.naukrigulf.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "gulftalent-com",
+    "pattern": "*://*.gulftalent.com/*",
+    "testedUrl": "https://gulftalent.com/",
+    "finalUrl": "https://www.gulftalent.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "akhtaboot-com",
+    "pattern": "*://*.akhtaboot.com/*",
+    "testedUrl": "https://akhtaboot.com/",
+    "finalUrl": "https://www.akhtaboot.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "wuzzuf-net",
+    "pattern": "*://*.wuzzuf.net/*",
+    "testedUrl": "https://wuzzuf.net/",
+    "finalUrl": "https://wuzzuf.net/jobs/egypt",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "dubizzle-com",
+    "pattern": "*://*.dubizzle.com/jobs/*",
+    "testedUrl": "https://dubizzle.com/jobs/",
+    "finalUrl": "https://dubizzle.com/jobs/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "careers24-com",
+    "pattern": "*://*.careers24.com/*",
+    "testedUrl": "https://careers24.com/",
+    "finalUrl": "https://careers24.com/",
+    "browser": "node-probe",
+    "httpStatus": 403,
+    "status": "SITE_BLOCKED",
+    "notes": "cloudflare challenge HTTP 403"
+  },
+  {
+    "siteId": "pnet-co-za",
+    "pattern": "*://*.pnet.co.za/*",
+    "testedUrl": "https://pnet.co.za/",
+    "finalUrl": "https://www.pnet.co.za/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "jobberman-com",
+    "pattern": "*://*.jobberman.com/*",
+    "testedUrl": "https://jobberman.com/",
+    "finalUrl": "https://www.jobberman.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "brightermonday-co-ke",
+    "pattern": "*://*.brightermonday.co.ke/*",
+    "testedUrl": "https://brightermonday.co.ke/",
+    "finalUrl": "https://www.brightermonday.co.ke/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "brightermonday-co-ug",
+    "pattern": "*://*.brightermonday.co.ug/*",
+    "testedUrl": "https://brightermonday.co.ug/",
+    "finalUrl": "https://www.brightermonday.co.ug/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "myjobmag-com",
+    "pattern": "*://*.myjobmag.com/*",
+    "testedUrl": "https://myjobmag.com/",
+    "finalUrl": "https://www.myjobmag.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "hotnigerianjobs-com",
+    "pattern": "*://*.hotnigerianjobs.com/*",
+    "testedUrl": "https://hotnigerianjobs.com/",
+    "finalUrl": "https://www.hotnigerianjobs.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "computrabajo-com",
+    "pattern": "*://*.computrabajo.com/*",
+    "testedUrl": "https://computrabajo.com/",
+    "finalUrl": "https://www.computrabajo.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "computrabajo-com-mx",
+    "pattern": "*://*.computrabajo.com.mx/*",
+    "testedUrl": "https://computrabajo.com.mx/",
+    "finalUrl": "https://mx.computrabajo.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "computrabajo-com-ar",
+    "pattern": "*://*.computrabajo.com.ar/*",
+    "testedUrl": "https://computrabajo.com.ar/",
+    "finalUrl": "https://ar.computrabajo.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "computrabajo-com-co",
+    "pattern": "*://*.computrabajo.com.co/*",
+    "testedUrl": "https://computrabajo.com.co/",
+    "finalUrl": "https://co.computrabajo.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "computrabajo-cl",
+    "pattern": "*://*.computrabajo.cl/*",
+    "testedUrl": "https://computrabajo.cl/",
+    "finalUrl": "https://cl.computrabajo.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "computrabajo-com-pe",
+    "pattern": "*://*.computrabajo.com.pe/*",
+    "testedUrl": "https://computrabajo.com.pe/",
+    "finalUrl": "https://pe.computrabajo.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "bumeran-com",
+    "pattern": "*://*.bumeran.com/*",
+    "testedUrl": "https://bumeran.com/",
+    "finalUrl": "http://www.bumeran.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "bumeran-com-ar",
+    "pattern": "*://*.bumeran.com.ar/*",
+    "testedUrl": "https://bumeran.com.ar/",
+    "finalUrl": "https://www.bumeran.com.ar/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "zonajobs-com-ar",
+    "pattern": "*://*.zonajobs.com.ar/*",
+    "testedUrl": "https://zonajobs.com.ar/",
+    "finalUrl": "https://www.zonajobs.com.ar/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "laborum-cl",
+    "pattern": "*://*.laborum.cl/*",
+    "testedUrl": "https://laborum.cl/",
+    "finalUrl": "https://www.laborum.cl/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "trabajando-com",
+    "pattern": "*://*.trabajando.com/*",
+    "testedUrl": "https://trabajando.com/",
+    "finalUrl": "https://www.trabajando.cl/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "elempleo-com",
+    "pattern": "*://*.elempleo.com/*",
+    "testedUrl": "https://elempleo.com/",
+    "finalUrl": "https://www.elempleo.com/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "catho-com-br",
+    "pattern": "*://*.catho.com.br/*",
+    "testedUrl": "https://catho.com.br/",
+    "finalUrl": "https://www.catho.com.br/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "vagas-com-br",
+    "pattern": "*://*.vagas.com.br/*",
+    "testedUrl": "https://vagas.com.br/",
+    "finalUrl": "https://www.vagas.com.br/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "gupy-io",
+    "pattern": "*://*.gupy.io/*",
+    "testedUrl": "https://gupy.io/",
+    "finalUrl": "https://gupy.io/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "ATS tenant-gated: public job requires a specific company subdomain HTTP 200"
+  },
+  {
+    "siteId": "infojobs-com-br",
+    "pattern": "*://*.infojobs.com.br/*",
+    "testedUrl": "https://infojobs.com.br/",
+    "finalUrl": "https://www.infojobs.com.br/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "infojobs-net",
+    "pattern": "*://*.infojobs.net/*",
+    "testedUrl": "https://infojobs.net/",
+    "finalUrl": "https://www.infojobs.net/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  },
+  {
+    "siteId": "torre-ai",
+    "pattern": "*://*.torre.ai/*",
+    "testedUrl": "https://torre.ai/",
+    "finalUrl": "https://torre.ai/",
+    "browser": "node-probe",
+    "httpStatus": 200,
+    "status": "NO_PUBLIC_TEST_URL",
+    "notes": "domain reachable (HTTP 200); no automated public job-URL discovery — see manual verification procedure"
+  }
+]
