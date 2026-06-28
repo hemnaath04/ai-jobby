@@ -1,12 +1,13 @@
 // ---------------------------------------------------------------------------
 // LLM client. Runs ONLY in the background service worker, so the API key never
-// touches page context. Supports three providers:
-//   - anthropic : api.anthropic.com /v1/messages
-//   - openai    : api.openai.com /v1/chat/completions
-//   - custom    : any OpenAI-compatible /v1/chat/completions (Manifest gateway,
-//                 Ollama at http://localhost:11434/v1, etc.)
+// touches page context. The provider registry (providers.ts) supplies the wire
+// format (OpenAI-compatible or Anthropic) and base URL; here we just build the
+// request. Works for OpenAI, Anthropic, Gemini, Groq, OpenRouter, DeepSeek,
+// xAI, Mistral, Together, Fireworks, Perplexity, Ollama, the built-in proxy,
+// and any custom OpenAI-compatible endpoint.
 // ---------------------------------------------------------------------------
 import type { Settings } from './types';
+import { getProvider, resolveBaseUrl, resolveModel } from './providers';
 
 export interface ChatArgs {
   system: string;
@@ -15,32 +16,38 @@ export interface ChatArgs {
   maxTokens: number;
   /** Ask OpenAI-style providers for a JSON object response. */
   jsonMode?: boolean;
-  /** Per-install id, sent to the custom backend for per-user rate limiting. */
+  /** Per-install id, sent to the built-in backend for per-user rate limiting. */
   clientId?: string;
 }
 
 class LlmError extends Error {}
 
 function requireKey(settings: Settings) {
-  if (settings.provider !== 'custom' && !settings.apiKey.trim()) {
+  const p = getProvider(settings.provider);
+  if (p.needsKey && !settings.apiKey.trim()) {
     throw new LlmError(
-      `No API key set. Add your ${settings.provider} key in RoleReveal options.`,
+      `No API key set. Add your ${p.label} key in RoleReveal options.`,
     );
   }
 }
 
-async function callAnthropic(settings: Settings, args: ChatArgs): Promise<string> {
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
+async function callAnthropic(
+  base: string,
+  key: string,
+  model: string,
+  args: ChatArgs,
+): Promise<string> {
+  const res = await fetch(`${base}/v1/messages`, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
-      'x-api-key': settings.apiKey,
+      'x-api-key': key,
       'anthropic-version': '2023-06-01',
       // Required when calling the API from a browser-context origin.
       'anthropic-dangerous-direct-browser-access': 'true',
     },
     body: JSON.stringify({
-      model: settings.model,
+      model,
       max_tokens: args.maxTokens,
       temperature: args.temperature,
       system: args.system,
@@ -60,23 +67,18 @@ async function callAnthropic(settings: Settings, args: ChatArgs): Promise<string
 }
 
 async function callOpenAiCompatible(
-  settings: Settings,
+  base: string,
+  key: string,
+  model: string,
   args: ChatArgs,
+  clientId?: string,
 ): Promise<string> {
-  const base =
-    settings.provider === 'openai'
-      ? 'https://api.openai.com/v1'
-      : settings.customBaseUrl.replace(/\/+$/, '');
   const headers: Record<string, string> = { 'content-type': 'application/json' };
-  if (settings.apiKey.trim()) {
-    headers['authorization'] = `Bearer ${settings.apiKey}`;
-  }
-  // Let the backend enforce a per-user daily quota without accounts.
-  if (settings.provider === 'custom' && args.clientId) {
-    headers['x-client-id'] = args.clientId;
-  }
+  if (key.trim()) headers['authorization'] = `Bearer ${key}`;
+  // Let the built-in backend enforce a per-user daily quota without accounts.
+  if (clientId) headers['x-client-id'] = clientId;
   const body: Record<string, unknown> = {
-    model: settings.model,
+    model,
     temperature: args.temperature,
     max_tokens: args.maxTokens,
     messages: [
@@ -105,7 +107,7 @@ async function callOpenAiCompatible(
   }
   const data = await res.json();
   const text: string = data?.choices?.[0]?.message?.content ?? '';
-  if (!text) throw new LlmError(`${settings.provider} returned an empty response.`);
+  if (!text) throw new LlmError('The provider returned an empty response.');
   return text;
 }
 
@@ -117,14 +119,24 @@ async function safeText(res: Response): Promise<string> {
   }
 }
 
-/** Single entry point. Routes to the configured provider. */
+/** Single entry point. Routes to the configured provider via the registry. */
 export async function chatComplete(
   settings: Settings,
   args: ChatArgs,
 ): Promise<string> {
   requireKey(settings);
-  if (settings.provider === 'anthropic') return callAnthropic(settings, args);
-  return callOpenAiCompatible(settings, args);
+  const p = getProvider(settings.provider);
+  const base = resolveBaseUrl(settings);
+  const model = resolveModel(settings);
+  if (!base) {
+    throw new LlmError('No base URL set. Add one in RoleReveal options.');
+  }
+  if (p.api === 'anthropic') {
+    return callAnthropic(base, settings.apiKey, model, args);
+  }
+  // Only the built-in proxy gets the rate-limit client id.
+  const clientId = p.id === 'builtin' ? args.clientId : undefined;
+  return callOpenAiCompatible(base, settings.apiKey, model, args, clientId);
 }
 
 /**

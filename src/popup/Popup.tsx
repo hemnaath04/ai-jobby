@@ -7,6 +7,7 @@ import type {
   TrackedApplication,
 } from '../lib/types';
 import { colorForScore } from '../lib/scoring';
+import { getProvider } from '../lib/providers';
 import { getSettings, getTracker } from '../lib/storage';
 import { downloadCsv, removeApplication, updateStatus } from '../lib/tracker';
 
@@ -81,7 +82,7 @@ function ScoreTab({ settings }: { settings: Settings | null }) {
     if (tab?.id) void chrome.tabs.sendMessage(tab.id, { type: 'OPEN_PANEL' }).catch(() => null);
   };
 
-  const keyMissing = settings && settings.provider !== 'custom' && !settings.apiKey;
+  const keyMissing = !!settings && getProvider(settings.provider).needsKey && !settings.apiKey;
   const color = result ? colorForScore(result.overallScore, settings?.thresholds ?? { apply: 75, maybe: 55 }) : '#374151';
 
   return (

@@ -1,5 +1,6 @@
 import type { JobSiteAdapter } from './types';
 import { revealApply } from './reveal';
+import { insertionBelowApply } from './insert';
 
 const clean = (s: string | null | undefined): string =>
   (s || '').replace(/\s+/g, ' ').trim();
@@ -66,13 +67,14 @@ export const symplicityAdapter: JobSiteAdapter = {
     );
   },
 
-  findDetailsInsertionPoint() {
+  findDetailsInsertionPoint(panel) {
     // Insert as a full-width banner above the description/employer columns,
     // i.e. directly below the header (title + Apply).
     return (
       (document.querySelector('.form-container') as HTMLElement) ||
       (h3ByText('Job Description')?.closest('.margin-lg') as HTMLElement) ||
-      (document.querySelector('.form-col') as HTMLElement)
+      (document.querySelector('.form-col') as HTMLElement) ||
+      insertionBelowApply(panel)
     );
   },
 

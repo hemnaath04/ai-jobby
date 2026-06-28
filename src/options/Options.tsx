@@ -1,15 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
-import type { Provider, Resume, Settings } from '../lib/types';
+import type { Resume, Settings } from '../lib/types';
 import { getResumes, getSettings, saveResumes, saveSettings } from '../lib/storage';
 import { extractPdfText } from '../lib/pdf';
 import { parseResumeImport } from '../lib/resume-import';
 import { newId } from '../lib/tracker';
-
-const PROVIDER_DEFAULT_MODEL: Record<Provider, string> = {
-  anthropic: 'claude-opus-4-8',
-  openai: 'gpt-4o',
-  custom: 'llama3.1',
-};
+import { getProvider, selectableProviders } from '../lib/providers';
 
 export function Options() {
   const [resumes, setResumes] = useState<Resume[]>([]);
@@ -49,7 +44,8 @@ export function Options() {
       <div className="privacy space">
         🔒 Your resumes, API key, settings, and tracker live only in this browser
         (chrome.storage.local). The job description and the chosen resume text are sent
-        only to the LLM endpoint you configure below — to no other server.
+        only to the AI used for scoring — the built-in RoleReveal service by default, or
+        your own provider if you set one below — and to no other server.
       </div>
 
       {err && <div className="err space">{err}</div>}
@@ -75,46 +71,103 @@ export function Options() {
       {/* ---------------- Settings ---------------- */}
       <h2 style={{ fontSize: 17 }}>Settings {saved && <span className="muted small">· saved ✓</span>}</h2>
 
-      <div className="grid2 space">
-        <label className="field">
-          <span className="lbl">LLM provider</span>
-          <select
-            value={settings.provider}
-            onChange={(e) => {
-              const provider = e.target.value as Provider;
-              patchSettings({ provider, model: PROVIDER_DEFAULT_MODEL[provider] });
-            }}
-          >
-            <option value="anthropic">Anthropic (Claude)</option>
-            <option value="openai">OpenAI</option>
-            <option value="custom">Custom (OpenAI-compatible)</option>
-          </select>
-        </label>
+      {(() => {
+        const advanced = settings.provider !== 'builtin';
+        const preset = getProvider(settings.provider);
+        return (
+          <>
+            <label className="toggle space">
+              <input
+                type="checkbox"
+                checked={advanced}
+                onChange={(e) =>
+                  patchSettings(
+                    e.target.checked
+                      ? { provider: 'openai', model: '', customBaseUrl: '' }
+                      : { provider: 'builtin' },
+                  )
+                }
+              />
+              Use my own AI provider / API key (advanced)
+            </label>
 
-        <label className="field">
-          <span className="lbl">Model</span>
-          <input value={settings.model} onChange={(e) => patchSettings({ model: e.target.value })} />
-        </label>
-      </div>
+            {!advanced ? (
+              <div className="privacy space">
+                ✨ <b>Built-in AI is on.</b> RoleReveal scores jobs out of the box —
+                no API key or setup needed. Turn on the option above only if you want
+                to use your own provider, model, or key.
+              </div>
+            ) : (
+              <>
+                <div className="grid2 space">
+                  <label className="field">
+                    <span className="lbl">AI provider</span>
+                    <select
+                      value={settings.provider}
+                      onChange={(e) => {
+                        const next = getProvider(e.target.value);
+                        patchSettings({
+                          provider: next.id,
+                          model: '',
+                          customBaseUrl: next.needsBaseUrl ? (next.defaultBaseUrl ?? '') : '',
+                        });
+                      }}
+                    >
+                      {selectableProviders().map((p) => (
+                        <option key={p.id} value={p.id}>{p.label}</option>
+                      ))}
+                    </select>
+                  </label>
 
-      {settings.provider === 'custom' && (
-        <label className="field space">
-          <span className="lbl">Custom base URL (OpenAI-compatible, e.g. http://localhost:11434/v1 or your gateway)</span>
-          <input value={settings.customBaseUrl} onChange={(e) => patchSettings({ customBaseUrl: e.target.value })} />
-        </label>
-      )}
+                  <label className="field">
+                    <span className="lbl">Model</span>
+                    <input
+                      list="rr-models"
+                      placeholder={preset.defaultModel || 'model id'}
+                      value={settings.model}
+                      onChange={(e) => patchSettings({ model: e.target.value })}
+                    />
+                    <datalist id="rr-models">
+                      {(preset.models ?? []).map((m) => <option key={m} value={m} />)}
+                    </datalist>
+                  </label>
+                </div>
 
-      <label className="field space">
-        <span className="lbl">
-          API key {settings.provider === 'custom' && '(optional for local models)'}
-        </span>
-        <input
-          type="password"
-          placeholder={settings.provider === 'anthropic' ? 'sk-ant-…' : 'sk-…'}
-          value={settings.apiKey}
-          onChange={(e) => patchSettings({ apiKey: e.target.value })}
-        />
-      </label>
+                {preset.needsBaseUrl && (
+                  <label className="field space">
+                    <span className="lbl">Base URL (OpenAI-compatible)</span>
+                    <input
+                      placeholder={preset.defaultBaseUrl || 'https://…/v1'}
+                      value={settings.customBaseUrl}
+                      onChange={(e) => patchSettings({ customBaseUrl: e.target.value })}
+                    />
+                  </label>
+                )}
+
+                <label className="field space">
+                  <span className="lbl">
+                    API key {preset.needsKey ? '' : '(optional for local models)'}
+                    {preset.keyUrl && (
+                      <>
+                        {' · '}
+                        <a href={preset.keyUrl} target="_blank" rel="noopener noreferrer">
+                          get a key
+                        </a>
+                      </>
+                    )}
+                  </span>
+                  <input
+                    type="password"
+                    placeholder={preset.keyHint || 'sk-…'}
+                    value={settings.apiKey}
+                    onChange={(e) => patchSettings({ apiKey: e.target.value })}
+                  />
+                </label>
+              </>
+            )}
+          </>
+        );
+      })()}
 
       <div className="grid2 space">
         <label className="field">
@@ -165,8 +218,9 @@ export function Options() {
       </div>
 
       <p className="muted small space">
-        Tip: with the Custom provider you can route through your own gateway or a local
-        Ollama model (set base URL to <code>http://localhost:11434/v1</code>) so evaluations cost nothing.
+        Tip: turn on “Use my own AI provider” to pick OpenAI, Anthropic, Gemini, Groq,
+        OpenRouter, and more (just paste your key — we handle the rest), or run a local
+        Ollama model (<code>http://localhost:11434/v1</code>) so evaluations cost nothing.
       </p>
 
       <p className="muted small">

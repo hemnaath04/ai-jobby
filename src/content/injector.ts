@@ -133,7 +133,18 @@ async function analyzeDetails(
   const summary = adapter.extractDetailsSummary();
   renderDetailsSkeleton(app, summary);
 
-  const jd = adapter.extractFullJobDescription();
+  // The job description may still be rendering (SPA route, lazy content). Poll
+  // briefly while the loading screen stays up, instead of erroring on the first
+  // miss — this is the difference between "loads for some jobs" and all of them.
+  let jd = adapter.extractFullJobDescription();
+  for (let i = 0; i < 10 && !jd; i++) {
+    await new Promise((r) => setTimeout(r, 400));
+    if (!host.isConnected || adapter.findDetailsJobId() !== jobId) {
+      detailsInFlight = null;
+      return;
+    }
+    jd = adapter.extractFullJobDescription();
+  }
   if (!jd) {
     if (host.isConnected) renderDetailsError(app, 'no job description found', () => analyzeDetails(adapter, jobId, host, app, true));
     detailsInFlight = null;

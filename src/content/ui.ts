@@ -75,6 +75,15 @@ const DETAILS_CSS = BASE_CSS + `
   .skel { background:linear-gradient(90deg,#1b1626,#2a2338,#1b1626); background-size:200% 100%;
     animation:sh 1.2s infinite; border-radius:8px; height:12px; }
   @keyframes sh { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+  .spinner { width:52px; height:52px; border-radius:50%;
+    border:4px solid rgba(255,255,255,.14); border-top-color:#9b8cff;
+    animation:spin .8s linear infinite; }
+  @keyframes spin { to { transform:rotate(360deg) } }
+  .badge.loading { background:rgba(155,140,255,.18); color:#b9aaff; }
+  .bar i.pulse { width:30%; background:linear-gradient(90deg,#7B61FF,#35A7FF,#18D6B8);
+    animation:loadbar 1.15s ease-in-out infinite; }
+  @keyframes loadbar { 0%{width:12%} 50%{width:88%} 100%{width:12%} }
+  .load-note { font-size:11.5px; margin-top:14px; line-height:1.5; }
 `;
 
 export function createShadowHost(jobId: string, kind: 'card' | 'details'): HTMLElement {
@@ -117,17 +126,25 @@ export function renderCardPanel(app: HTMLElement, est: number, signals: Determin
 
 // ── Details panel (selected job) ───────────────────────────────────────────
 export function renderDetailsSkeleton(app: HTMLElement, summary: JobSummary | null): void {
+  const what = summary?.title ? esc(summary.title) : 'this role';
+  const loadingBar = (label: string) =>
+    `<div class="bar-row"><span>${label}</span><div class="bar"><i class="pulse"></i></div><b class="muted">…</b></div>`;
   app.innerHTML = `
     <div class="aj">
       <div class="head"><span class="brand"><img src="${LOGO_URL}" alt=""> RoleReveal</span></div>
       <div class="top">
-        <div class="skel" style="width:92px;height:92px;border-radius:50%"></div>
-        <div style="flex:1">
-          <div class="skel" style="width:38%"></div>
-          <div class="skel" style="width:75%;margin-top:9px"></div>
+        <div class="donut" style="width:92px;height:92px"><div class="spinner"></div></div>
+        <div class="meta">
+          <span class="badge loading">Analyzing…</span>
+          <div class="title">Scoring ${what} against your resume</div>
         </div>
       </div>
-      <div class="muted" style="font-size:12px;margin-top:14px">Scoring ${esc(summary?.title || 'this role')}…</div>
+      <div class="bars">
+        ${loadingBar('Skills')}
+        ${loadingBar('Experience')}
+        ${loadingBar('Role context')}
+      </div>
+      <div class="muted load-note">Reading the job description and comparing it with your resume — this usually takes a few seconds.</div>
     </div>`;
 }
 

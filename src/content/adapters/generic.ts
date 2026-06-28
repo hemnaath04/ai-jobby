@@ -1,8 +1,8 @@
 import type { JobSiteAdapter } from './types';
 import { revealApply } from './reveal';
+import { insertionBelowApply } from './insert';
 import {
   extractJob,
-  getJdAnchor,
   hasJobPostingJsonLd,
   isLikelyJobPage,
 } from '../../lib/jd-extract';
@@ -39,10 +39,10 @@ export const genericAdapter: JobSiteAdapter = {
     return (document.querySelector('main') as HTMLElement) || document.body;
   },
 
-  findDetailsInsertionPoint() {
-    // getJdAnchor returns the description container or a "Job Description"-style
-    // heading; we insert our panel right before it (above the description).
-    return getJdAnchor();
+  findDetailsInsertionPoint(panel) {
+    // Land the panel directly below the page's Apply button (falls back to above
+    // the description / top of main, so a detected job always shows the panel).
+    return insertionBelowApply(panel);
   },
 
   findDetailsJobId() {

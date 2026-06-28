@@ -42,7 +42,24 @@ export async function getClientId(): Promise<string> {
 export async function getSettings(): Promise<Settings> {
   const s = await get('settings', DEFAULT_SETTINGS);
   // Merge so newly-added fields get defaults after an upgrade.
-  return { ...DEFAULT_SETTINGS, ...s, thresholds: { ...DEFAULT_SETTINGS.thresholds, ...s.thresholds }, overlay: { ...DEFAULT_SETTINGS.overlay, ...s.overlay } };
+  const merged: Settings = {
+    ...DEFAULT_SETTINGS,
+    ...s,
+    thresholds: { ...DEFAULT_SETTINGS.thresholds, ...s.thresholds },
+    overlay: { ...DEFAULT_SETTINGS.overlay, ...s.overlay },
+  };
+  // Migrate older installs that used provider:'custom' pointed at the bundled
+  // proxy — that's now the hidden 'builtin' provider, so the proxy URL never
+  // shows in settings.
+  if (
+    merged.provider === 'custom' &&
+    /ai-jobby-backend|rolereveal-backend/.test(merged.customBaseUrl)
+  ) {
+    merged.provider = 'builtin';
+    merged.customBaseUrl = '';
+    if (merged.model === 'auto') merged.model = '';
+  }
+  return merged;
 }
 
 export async function saveSettings(patch: Partial<Settings>): Promise<Settings> {

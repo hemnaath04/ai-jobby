@@ -1,6 +1,7 @@
 import type { JobSiteAdapter } from './types';
 import type { JobSummary } from '../../lib/types';
 import { revealApply } from './reveal';
+import { insertionBelowApply } from './insert';
 
 const clean = (s: string | null | undefined): string =>
   (s || '').replace(/\s+/g, ' ').trim();
@@ -110,29 +111,12 @@ export const linkedInAdapter: JobSiteAdapter = {
     return (document.querySelector('main') as HTMLElement) || document.body;
   },
 
-  findDetailsInsertionPoint() {
-    // Prefer to sit right under the apply/top-card. Find the native Apply link,
-    // climb to the tall top-card block, and insert after it. Hashed classes make
-    // structural climbing the only stable option on the beta UI.
-    const apply = (() => {
-      for (const a of Array.from(document.querySelectorAll<HTMLElement>('a'))) {
-        if (clean(a.textContent).toLowerCase() === 'apply') return a;
-      }
-      return null;
-    })();
-    if (apply) {
-      let block: HTMLElement = apply;
-      for (let i = 0; i < 10 && block.parentElement; i++) {
-        if (block.parentElement.getBoundingClientRect().height >= 150) {
-          block = block.parentElement;
-          break;
-        }
-        block = block.parentElement;
-      }
-      return (block.nextElementSibling as HTMLElement) || block;
-    }
-    // Fallbacks (classic UI / apply not found).
+  findDetailsInsertionPoint(panel) {
+    // Land directly under the Apply / top-card (handles "Easy Apply" too via the
+    // shared matcher). Always returns a usable anchor, so the panel never
+    // silently fails to inject on a job we detected.
     return (
+      insertionBelowApply(panel) ||
       byExactText('h2', 'About the job') ||
       (document.querySelector('[data-testid="expandable-text-box"]') as HTMLElement) ||
       first(document, ['#job-details', '.jobs-description__content', '.jobs-description'])

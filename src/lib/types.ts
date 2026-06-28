@@ -16,16 +16,18 @@ export interface Resume {
   updatedAt: number;
 }
 
-export type Provider = 'anthropic' | 'openai' | 'custom';
+/** A provider id from the registry in providers.ts ('builtin','openai',…). */
+export type Provider = string;
 
 export interface Settings {
+  /** Provider id (see src/lib/providers.ts). 'builtin' = RoleReveal's hosted AI. */
   provider: Provider;
   /** API key for the chosen provider. Stored only in chrome.storage.local. */
   apiKey: string;
-  /** Model id, e.g. claude-opus-4-8 or gpt-4o. */
+  /** Model id, e.g. claude-haiku-4-5 or gpt-4o-mini. Empty = provider default. */
   model: string;
-  /** Base URL for the "custom" OpenAI-compatible provider (Manifest gateway,
-   *  Ollama at http://localhost:11434/v1, etc.). Ignored for anthropic/openai. */
+  /** Base URL — only used by providers that need one (Custom, Ollama). For
+   *  hosted providers the base URL comes from the registry, not from here. */
   customBaseUrl: string;
   /** Score thresholds for the verdict colours/labels. */
   thresholds: { apply: number; maybe: number };
@@ -40,12 +42,14 @@ export interface Settings {
 }
 
 export const DEFAULT_SETTINGS: Settings = {
-  // Ship with the built-in backend so new users score jobs with zero setup;
-  // anything they set in Options overrides this. See src/lib/config.ts.
-  provider: DEFAULT_BACKEND.provider,
+  // Ship on the built-in hosted AI so new users score jobs with zero setup. The
+  // built-in provider's base URL lives in the registry (providers.ts), not here,
+  // so it stays out of the visible settings. Users can switch to their own
+  // provider/key under "Advanced" in Options.
+  provider: 'builtin',
   apiKey: DEFAULT_BACKEND.apiKey,
-  model: DEFAULT_BACKEND.model,
-  customBaseUrl: DEFAULT_BACKEND.customBaseUrl,
+  model: '',
+  customBaseUrl: '',
   thresholds: { apply: 75, maybe: 55 },
   autoRun: true,
   redactPii: true,
