@@ -29,15 +29,15 @@ Think of it as a second pair of eyes that reads the job description, compares it
 - **A one-line "why."** A short, honest summary of the verdict — no fluff.
 - **The details when you want them.** Click *Show match details* for required vs. nice-to-have qualifications, the skills you match, and the skills (and ATS keywords) you're missing.
 - **Quick signals.** Sponsorship/citizenship wording, work mode, and salary, pulled straight from the description.
-- **Works almost everywhere.** LinkedIn, Indeed, Glassdoor, Greenhouse, Lever, Workday, your university job board (NUworks/Symplicity), and most company career pages.
+- **Auto-runs on 100+ major boards & ATS worldwide.** LinkedIn, Indeed, Glassdoor, Greenhouse, Lever, Ashby, Workday, SmartRecruiters, your university job board (NUworks/Symplicity), and more. On any other career site, score the job in one click from the toolbar.
 - **Multiple résumés.** Add a few; it automatically scores against your best-matching one.
 - **A built-in tracker.** Mark jobs as applied and keep a simple list.
 
 ## How it works
 
 1. Add your résumé once (PDF, paste, or JSON) in the options page.
-2. Open any job posting.
-3. RoleReveal detects it, reads the description, and shows the match panel — no button-mashing.
+2. Open a job posting on any of the 100+ supported boards/ATS — RoleReveal detects it, reads the description, and shows the match panel automatically. On any other site, click the RoleReveal toolbar button to score the job on that tab.
+3. No button-mashing on supported sites; one click everywhere else.
 
 Under the hood it uses an AI model to do the comparison. You can use the **built-in backend** (nothing to set up) or plug in **your own provider and API key** (Anthropic, OpenAI, Gemini, or any OpenAI-compatible endpoint) in Options.
 

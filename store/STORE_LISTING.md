@@ -14,11 +14,12 @@ Productivity
 > — keywords are front-loaded here, naturally (no stuffing).
 
 RoleReveal is an AI resume match score and job-fit checker that works right on the
-job posting you're viewing. Open any job on LinkedIn, Indeed, Glassdoor,
-Greenhouse, Lever, Workday, or any company careers page, and instantly see how
-well your resume matches the role — a 0–100 match score, an Apply / Maybe / Skip
-verdict, and the required skills, qualifications, and ATS keywords you're missing
-— inline, as you browse.
+job posting you're viewing. It automatically detects jobs on 100+ major boards and
+ATS worldwide — LinkedIn, Indeed, Glassdoor, Greenhouse, Lever, Ashby, Workday,
+SmartRecruiters, and more — and on any other career site you can score the job in
+one click from the toolbar. Instantly see how well your resume matches the role —
+a 0–100 match score, an Apply / Maybe / Skip verdict, and the required skills,
+qualifications, and ATS keywords you're missing — inline, as you browse.
 
 Stop guessing whether you're a fit. RoleReveal compares your resume against each
 job description and shows where you're strong and what to add before you apply.
@@ -27,8 +28,9 @@ Features
 • Live resume match score (0–100) + Apply / Maybe / Skip verdict on every posting
 • Required vs. nice-to-have qualifications, matching skills, and missing skills / ATS keywords
 • Sponsorship, work-mode, and salary signals pulled from the job description
-• Works on LinkedIn, Indeed, Glassdoor, Greenhouse, Lever, Workday,
-  NUworks/Symplicity, and virtually any job board or careers page
+• Auto-runs on 100+ major job boards and ATS worldwide (LinkedIn, Indeed,
+  Glassdoor, Greenhouse, Lever, Ashby, Workday, SmartRecruiters, NUworks, …);
+  one-click toolbar scoring on any other career site
 • Multiple resumes — it automatically picks your best-matching one
 • Built-in application tracker
 

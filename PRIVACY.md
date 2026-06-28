@@ -55,11 +55,19 @@ job-site automation rules and keeps your account safe.
 
 ## Permissions
 - **storage** — save your resumes, settings, and tracker on your device.
-- **activeTab** — read the job posting on the tab you're viewing to score it.
+- **activeTab** — when you click the RoleReveal toolbar button on a site that
+  isn't one of the pre-listed boards, read the job posting on that one tab to
+  score it. Access is temporary and not retained for the domain.
+- **scripting** — inject the scoring panel into the active tab in response to
+  that toolbar click. Never used for background or automatic injection.
 - **contextMenus** — provide a right-click "evaluate selected text" option.
-- **host access (all sites)** — job postings appear on many different career
-  sites and job boards, so the extension must be able to read a job description
-  wherever you encounter one. It only acts when a posting is detected.
+- **content scripts (curated list)** — the extension auto-runs only on a fixed
+  list of ~100 major job boards and ATS platforms (LinkedIn, Indeed, Glassdoor,
+  Greenhouse, Lever, Ashby, Workday, SmartRecruiters, etc.). It does not request
+  access to all sites; any other site is handled only via the toolbar action above.
+- **host access (LLM endpoints only)** — limited to the specific AI API
+  endpoints used to generate the score (the built-in service and any provider you
+  choose). Not used to read your browsing.
 
 ## Data deletion
 Removing the extension deletes all locally stored data. You can also clear
