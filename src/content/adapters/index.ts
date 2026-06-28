@@ -1,11 +1,17 @@
 import type { JobSiteAdapter } from './types';
 import { linkedInAdapter } from './linkedin';
+import { indeedAdapter } from './indeed';
 import { symplicityAdapter } from './symplicity';
 import { genericAdapter } from './generic';
 
 // Site-specific adapters first (richer extraction + card injection), then the
 // universal generic adapter that handles every other job posting on the web.
-const ADAPTERS: JobSiteAdapter[] = [linkedInAdapter, symplicityAdapter, genericAdapter];
+const ADAPTERS: JobSiteAdapter[] = [
+  linkedInAdapter,
+  indeedAdapter,
+  symplicityAdapter,
+  genericAdapter,
+];
 
 export function activeAdapter(): JobSiteAdapter | null {
   return ADAPTERS.find((a) => a.isSupportedPage()) ?? null;

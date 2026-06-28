@@ -14,6 +14,9 @@ export const genericAdapter: JobSiteAdapter = {
   site: 'web',
 
   isSupportedPage() {
+    // Indeed is handled by its own adapter; never let the generic heuristic
+    // score the search-results context there.
+    if (/(^|\.)indeed\.[a-z.]+$/.test(location.hostname)) return false;
     if (hasJobPostingJsonLd()) return true;
     return isLikelyJobPage(extractJob());
   },
@@ -35,6 +38,7 @@ export const genericAdapter: JobSiteAdapter = {
   },
 
   findDetailsPanel() {
+    if (/(^|\.)indeed\.[a-z.]+$/.test(location.hostname)) return null;
     if (!hasJobPostingJsonLd() && !isLikelyJobPage(extractJob())) return null;
     return (document.querySelector('main') as HTMLElement) || document.body;
   },
