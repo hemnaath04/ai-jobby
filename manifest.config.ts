@@ -1,35 +1,13 @@
 import { defineManifest } from '@crxjs/vite-plugin';
 import pkg from './package.json';
+import { MATCH_PATTERNS } from './src/config/patterns';
 
-// RoleReveal auto-runs only on major job boards / ATS platforms. On every other
-// site it stays completely inert until the user clicks "Evaluate current tab"
-// in the popup, which injects on demand via activeTab + scripting. This keeps
-// the extension narrowly scoped (faster Web Store review, no broad host access)
-// and prevents false positives on non-job pages (courses, docs, dashboards).
-const JOB_SITE_MATCHES = [
-  '*://*.linkedin.com/*',
-  '*://*.indeed.com/*',
-  '*://*.glassdoor.com/*',
-  '*://*.ziprecruiter.com/*',
-  '*://*.monster.com/*',
-  '*://*.dice.com/*',
-  '*://*.simplyhired.com/*',
-  '*://*.wellfound.com/*',
-  '*://*.builtin.com/*',
-  '*://*.greenhouse.io/*',
-  '*://*.lever.co/*',
-  '*://*.myworkdayjobs.com/*',
-  '*://*.ashbyhq.com/*',
-  '*://*.smartrecruiters.com/*',
-  '*://*.icims.com/*',
-  '*://*.workable.com/*',
-  '*://*.breezy.hr/*',
-  '*://*.teamtailor.com/*',
-  '*://*.recruitee.com/*',
-  '*://*.jobvite.com/*',
-  '*://*.bamboohr.com/*',
-  '*://*.symplicity.com/*',
-];
+// Auto-run sites come straight from src/config/job-sites.json (validated +
+// de-duplicated in src/config/patterns.ts) — the single source of truth. There
+// is no second copy of the patterns here. On every other site RoleReveal stays
+// inert until the user clicks "Run Role Reveal on this job" (activeTab +
+// scripting), so the extension never needs broad host access.
+const JOB_SITE_MATCHES = MATCH_PATTERNS;
 
 // The LLM endpoints the background service worker is allowed to call. Scoped to
 // the built-in proxy + each supported provider (and localhost for Ollama) so we

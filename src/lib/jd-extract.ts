@@ -315,7 +315,7 @@ interface LdJob {
 /** Read a schema.org JobPosting from <script type="application/ld+json">. This
  *  is the most reliable "this is a real posting" signal — generic pages (a repo,
  *  an inbox, a search results page) don't carry it. */
-function readJsonLdJob(): LdJob | null {
+export function readJsonLdJob(): LdJob | null {
   const nodes = document.querySelectorAll('script[type="application/ld+json"]');
   for (const n of Array.from(nodes)) {
     let data: any;

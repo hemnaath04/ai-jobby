@@ -66,6 +66,11 @@ function jobKey(): string | null {
 // only inject the details panel, scoped to the SELECTED job in the right pane.
 export const indeedAdapter: JobSiteAdapter = {
   site: 'indeed',
+  dedicated: true,
+
+  matches(url: URL) {
+    return /(^|\.)indeed\.[a-z.]+$/.test(url.hostname);
+  },
 
   isSupportedPage() {
     if (!/(^|\.)indeed\.[a-z.]+$/.test(location.hostname)) return false;

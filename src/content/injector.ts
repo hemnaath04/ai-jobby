@@ -6,6 +6,9 @@ import type {
   JobContext,
 } from '../lib/types';
 import { normalizeUrl } from '../lib/url';
+import { extractJobVia } from './adapters/extract';
+import { validatePage } from './validate';
+import { isStale } from './stale';
 import { deterministicSignals, quickLocalScore } from './deterministic';
 import {
   ROOT_ATTR,
@@ -34,6 +37,11 @@ export function setResumeText(t: string) {
 const detailsCache = new Map<string, EvalResult>();
 let detailsInFlight: string | null = null;
 let detailsRenderedId: string | null = null;
+
+// Monotonic token to invalidate in-flight analyses when the selected job key
+// changes under an SPA navigation. Each analyzeDetails() captures the current
+// value; after its awaited work it bails if a newer analysis bumped the token.
+let analysisToken = 0;
 
 // Dismissal lifecycle, keyed by normalizeUrl(location.href). `dismissed` is the
 // in-memory truth that stops the MutationObserver from re-injecting; `checked`
@@ -82,14 +90,32 @@ export function processVisibleJobCards(adapter: JobSiteAdapter): void {
 // touch the DOM when the selected job actually changes.
 export function processSelectedJobDetails(adapter: JobSiteAdapter): void {
   const panel = adapter.findDetailsPanel();
-  const jobId = panel ? adapter.findDetailsJobId() : null;
+  const rawId = panel ? adapter.findDetailsJobId() : null;
 
   // Page is not (or no longer) a recognised job posting → remove any stale panel.
-  if (!panel || !jobId) {
+  if (!panel || !rawId) {
     removeDetailsHost();
     resetDetailsState();
     return;
   }
+
+  // Strict validation gate: require a canonical key, the field minimums, at least
+  // one positive signal, and no rejection heuristic. Only proceed when ok — the
+  // validated key becomes the canonical job id used everywhere below (so SPA key
+  // changes are detected via host.dataset.jobId).
+  const extracted = extractJobVia(adapter);
+  if (!extracted) {
+    removeDetailsHost();
+    resetDetailsState();
+    return;
+  }
+  const verdict = validatePage(adapter, extracted);
+  if (!verdict.ok) {
+    removeDetailsHost();
+    resetDetailsState();
+    return;
+  }
+  const jobId = verdict.job.key;
 
   const key = normalizeUrl(location.href);
 
@@ -122,6 +148,9 @@ export function processSelectedJobDetails(adapter: JobSiteAdapter): void {
   if (!insertion || !insertion.parentElement) return;
 
   // Reuse the single global root and (re)position it just below the apply area.
+  // The job key changed (we returned early above if it hadn't), so invalidate any
+  // in-flight analysis for the previous job before starting this one.
+  analysisToken++;
   const host = getOrCreateDetailsHost();
   host.dataset.jobId = jobId;
   insertion.parentElement.insertBefore(host, insertion);
@@ -144,6 +173,13 @@ async function analyzeDetails(
 ): Promise<void> {
   if (detailsInFlight === jobId && !force) return;
   detailsInFlight = jobId;
+  // Capture the token for this analysis; any newer analysis (job key change)
+  // bumps analysisToken and makes this run's result stale → discarded.
+  const myToken = analysisToken;
+
+  // The current canonical key lives on the single root's dataset (set at inject).
+  const currentKey = (): string | null => detailsHost()?.dataset.jobId ?? null;
+  const stale = () => isStale(myToken, jobId, analysisToken, currentKey(), host.isConnected);
 
   const summary = adapter.extractDetailsSummary();
   renderDetailsSkeleton(app, summary);
@@ -154,7 +190,7 @@ async function analyzeDetails(
   let jd = adapter.extractFullJobDescription();
   for (let i = 0; i < 10 && !jd; i++) {
     await new Promise((r) => setTimeout(r, 400));
-    if (!host.isConnected || adapter.findDetailsJobId() !== jobId) {
+    if (stale()) {
       detailsInFlight = null;
       return;
     }
@@ -177,8 +213,9 @@ async function analyzeDetails(
 
   const res = await send<EvaluateResponse>({ type: 'EVALUATE', job, force });
 
-  // Bail if the user moved to another job while we were waiting.
-  if (!host.isConnected || adapter.findDetailsJobId() !== jobId) {
+  // Discard a stale result: a newer analysis started, the job key changed, or the
+  // host was removed while we were awaiting the background EVALUATE.
+  if (stale()) {
     detailsInFlight = null;
     return;
   }
@@ -254,4 +291,6 @@ export function clearDismissForCurrent(): void {
 export function resetDetailsState(): void {
   detailsInFlight = null;
   detailsRenderedId = null;
+  // Invalidate any in-flight analysis (e.g. SPA route to a non-job page).
+  analysisToken++;
 }

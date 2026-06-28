@@ -33,6 +33,11 @@ const SECTION_LABELS = new Set([
 // no list, so only the details panel is injected.
 export const symplicityAdapter: JobSiteAdapter = {
   site: 'NUworks',
+  dedicated: true,
+
+  matches(url: URL) {
+    return url.hostname.endsWith('symplicity.com') && url.pathname.includes('/jobs/detail');
+  },
 
   isSupportedPage() {
     return (

@@ -40,6 +40,11 @@ function jobIdFromHref(href: string | null): string | null {
 
 export const linkedInAdapter: JobSiteAdapter = {
   site: 'linkedin',
+  dedicated: true,
+
+  matches(url: URL) {
+    return url.hostname.endsWith('linkedin.com') && url.pathname.includes('/jobs');
+  },
 
   isSupportedPage() {
     return (

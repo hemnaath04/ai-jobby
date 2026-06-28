@@ -18,6 +18,15 @@ import { getEnabledResumes } from '../lib/storage';
 import { extractJob } from '../lib/jd-extract';
 import type { JobContext } from '../lib/types';
 
+/**
+ * Top-frame guard, extracted as a pure helper so it's unit-testable. RoleReveal
+ * runs only in the top frame (never in iframes/ads/embeds). Pass the window to
+ * test; defaults to the real window.
+ */
+export function shouldAutoRun(win: Window = window): boolean {
+  return win.top === win.self;
+}
+
 // Single-init guard: crxjs / SPA re-injection can run this module more than once.
 // Bail on the second run so we never create duplicate listeners, observers,
 // route-change timers, or panel roots.
@@ -90,7 +99,7 @@ function process() {
 }
 
 async function main() {
-  if (window.top !== window.self) return; // top frame only
+  if (!shouldAutoRun()) return; // top frame only
 
   try {
     const resumes = await getEnabledResumes();

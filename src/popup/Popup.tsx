@@ -10,6 +10,9 @@ import { colorForScore } from '../lib/scoring';
 import { getProvider } from '../lib/providers';
 import { getSettings, getTracker } from '../lib/storage';
 import { downloadCsv, removeApplication, updateStatus } from '../lib/tracker';
+import { MANUAL_FALLBACK } from '../config/patterns';
+
+const RUN_LABEL = MANUAL_FALLBACK?.buttonLabel || 'Run Role Reveal on this job';
 
 const send = <T,>(msg: unknown): Promise<T> =>
   chrome.runtime.sendMessage(msg) as Promise<T>;
@@ -80,7 +83,10 @@ function ScoreTab({ settings }: { settings: Settings | null }) {
       // the content script on demand here (activeTab + scripting, on the click).
       await ensureContentScript(tab.id);
       const j = await chrome.tabs.sendMessage(tab.id, { type: 'GET_JOB' }).catch(() => null);
-      if (!j) throw new Error("Couldn't read this page. Open a job posting and try again.");
+      if (!j) throw new Error('No job posting detected on this page.');
+      if (!j.jdText || j.jdText.trim().length < 80) {
+        throw new Error('No job posting detected on this page.');
+      }
       setJob(j);
       const res = await send<EvaluateResponse>({ type: 'EVALUATE', job: j, force: false });
       if (res.ok) { setResult(res.result); setStatus('done'); }
@@ -118,7 +124,7 @@ function ScoreTab({ settings }: { settings: Settings | null }) {
       )}
 
       <button className="btn primary" style={{ width: '100%' }} onClick={run} disabled={status === 'loading'}>
-        {status === 'loading' ? 'Scoring…' : 'Evaluate current tab'}
+        {status === 'loading' ? 'Scoring…' : RUN_LABEL}
       </button>
 
       <button className="btn ghost small space" style={{ width: '100%' }} onClick={showPanelOnPage}>

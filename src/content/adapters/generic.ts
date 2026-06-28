@@ -12,6 +12,14 @@ import {
 // non-posting page (a repo, an inbox, a blog post).
 export const genericAdapter: JobSiteAdapter = {
   site: 'web',
+  dedicated: false,
+
+  matches(url: URL) {
+    // The generic adapter is content-driven (JSON-LD / heuristic), not URL-bound,
+    // so a pure URL check can't tell. Treat it as a match for any non-Indeed host
+    // and let isSupportedPage()/validation decide on actual page content.
+    return !/(^|\.)indeed\.[a-z.]+$/.test(url.hostname);
+  },
 
   isSupportedPage() {
     // Indeed is handled by its own adapter; never let the generic heuristic
