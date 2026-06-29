@@ -53,10 +53,12 @@ describe('Indeed adapter — pane-scoped extraction', () => {
     const pane = indeedAdapter.findDetailsPanel();
     expect(pane).not.toBeNull();
     const anchor = indeedAdapter.findDetailsInsertionPoint(pane!);
-    // host is inserted BEFORE the returned anchor → anchor is the body block,
-    // so the panel lands between the header/apply and the description body.
+    // host is inserted BEFORE the returned anchor → anchor is the body's first
+    // child, so the panel lands INSIDE the scrolling body (in flow) at the top,
+    // above the description (never overlapping it).
     expect(anchor).not.toBeNull();
-    expect((anchor as HTMLElement).className).toContain('jobsearch-embeddedBody');
+    const body = document.querySelector('.jobsearch-embeddedBody');
+    expect(anchor).toBe(body!.firstElementChild);
   });
 
   it('rejects a bare search list with no selected detail pane', () => {

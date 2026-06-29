@@ -128,13 +128,15 @@ export const indeedAdapter: JobSiteAdapter = {
     const pane = (panel as HTMLElement) || detailPane();
     if (!pane) return null;
     // Required order: title → company/location → apply → RoleReveal → body.
-    // Insert just above the body block (Job details / description), i.e. right
-    // after the header + native apply controls, in normal flow.
+    // Insert INSIDE the scrolling body as its first child (in normal flow), so
+    // the description is pushed down and scrolls under nothing. (Inserting
+    // *before* the body container overlaps on layouts where that container is
+    // positioned / its own scroll area.)
     const body =
       (pane.querySelector('.jobsearch-embeddedBody') as HTMLElement | null) ||
       (pane.querySelector('.jobsearch-BodyContainer') as HTMLElement | null);
-    if (body && body.parentElement) return body;
-    // Fallback: directly above the description wrapper.
+    if (body && body.firstElementChild) return body.firstElementChild as HTMLElement;
+    // Fallback: directly above the description wrapper (also in the body flow).
     const desc = within(pane, DESC_SELECTORS);
     const descBlock =
       (desc?.closest('[data-testid="jobsearch-JobComponent-description"]') as HTMLElement) || desc;
