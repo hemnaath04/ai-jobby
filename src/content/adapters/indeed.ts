@@ -103,9 +103,15 @@ export const indeedAdapter: JobSiteAdapter = {
   },
 
   findDetailsInsertionPoint(panel) {
-    // Sit just above the job description — i.e. inside the right pane, below the
-    // title + apply button. Prefer this over the generic apply-climb so the panel
-    // lands in the pane (not after it).
+    // Put the panel at the TOP of the right pane so it's visible without
+    // scrolling. On Indeed's split-view the description (#jobDescriptionText)
+    // sits far below "Job details / Pay / Location", so anchoring above the
+    // description pushes the panel off-screen.
+    const pane = first(PANE_SELECTORS);
+    if (pane && pane.firstElementChild && pane.firstElementChild.parentElement) {
+      return pane.firstElementChild as HTMLElement;
+    }
+    // Fallbacks: above the description, then the generic below-apply anchor.
     const desc = first(DESC_SELECTORS);
     const descBlock =
       (desc?.closest('[data-testid="jobsearch-JobComponent-description"]') as HTMLElement) ||
