@@ -120,7 +120,8 @@ export const indeedAdapter: JobSiteAdapter = {
 
   extractDetailsSummary() {
     const id = jobKey();
-    const title = clean(first(TITLE_SELECTORS)?.textContent);
+    // Indeed's SERP split-view appends " - job post" to the title node; strip it.
+    const title = clean(first(TITLE_SELECTORS)?.textContent).replace(/\s*-\s*job post\s*$/i, '');
     if (!id || !title) return null;
     const company = clean(first(COMPANY_SELECTORS)?.textContent);
     return { id, title, company, url: location.href };
